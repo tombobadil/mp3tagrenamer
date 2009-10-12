@@ -1,0 +1,178 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FB80821-82E4-42FD-84AA-B8AA1A97838B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MP3TagRenamer</RootNamespace>
+    <AssemblyName>MP3TagRenamer</AssemblyName>
+    <ApplicationIcon>Icons\ProgramIcon.ico</ApplicationIcon>
+    <StartupObject>MP3TagRenamer.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UltraID3Lib, Version=0.9.6.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UltraID3Lib-0.9.6.6\UltraID3Lib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ResourceTexts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceTexts.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCompareDuplicates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCompareDuplicates.Designer.cs">
+      <DependentUpon>UserControlCompareDuplicates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteFileList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteFileList.Designer.cs">
+      <DependentUpon>FormDeleteFileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolderSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolderSelector.Designer.cs">
+      <DependentUpon>UserControlFolderSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMP3Renamer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMP3Renamer.Designer.cs">
+      <DependentUpon>FormMP3Renamer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP3TagEditor\Mp3TagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP3TagEditor\Mp3TagEditor.Designer.cs">
+      <DependentUpon>Mp3TagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP3TagEditor\TrackInfoExtracingProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP3TagEditor\TrackInfoExtracingProperties.Designer.cs">
+      <DependentUpon>TrackInfoExtracingProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAboutBox.Designer.cs">
+      <DependentUpon>FormAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ResourceTexts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceTexts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCompareDuplicates.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserControlCompareDuplicates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteFileList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDeleteFileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolderSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserControlFolderSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMP3Renamer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMP3Renamer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP3TagEditor\Mp3TagEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Mp3TagEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP3TagEditor\TrackInfoExtracingProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrackInfoExtracingProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\HundredMilesSoftware.UltraID3Lib.ID3v23Tag.datasource" />
+    <None Include="Properties\DataSources\HundredMilesSoftware.UltraID3Lib.UltraID3.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Help.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\close_icon.gif" />
+    <None Include="Properties\DataSources\HundredMilesSoftware.UltraID3Lib.ID3v1Tag.datasource" />
+    <None Include="Properties\DataSources\MP3TagRenamer.MP3TagEditor.Mp3TagEditor.datasource" />
+    <None Include="Icons\IconDeleteMP3.ico" />
+    <None Include="Icons\PlayButton.bmp" />
+    <None Include="Icons\ProgramIcon.ico" />
+    <None Include="Resources\my_play_datagridcolumn.Image.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3TagRenamer", "MP3TagRenamer\MP3TagRenamer.csproj", "{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupMP3Renamer", "SetupMP3Renamer\SetupMP3Renamer.vdproj", "{BD7B7243-EA86-48C0-9605-D37F0620C752}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB80821-82E4-42FD-84AA-B8AA1A97838B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB80821-82E4-42FD-84AA-B8AA1A97838B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB80821-82E4-42FD-84AA-B8AA1A97838B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB80821-82E4-42FD-84AA-B8AA1A97838B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7B7243-EA86-48C0-9605-D37F0620C752}.Debug|Any CPU.ActiveCfg = Debug
+		{BD7B7243-EA86-48C0-9605-D37F0620C752}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

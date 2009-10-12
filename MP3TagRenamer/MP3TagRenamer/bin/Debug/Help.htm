@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+	</head>
+	<body style="list-style-position: outside; font-size: small; margin-left: 15px; color: #000000; border-top-style: solid; text-indent: 10pt; font-family: 'Times New Roman', Tahoma, Verdana; border-right-style: solid; border-left-style: solid; list-style-type: square; background-color: lightsteelblue; border-bottom-style: solid">
+        <ul>
+            <li><strong><a rel="Glossary" href="#remove_text_from_title">Remove text from title</a></strong><br />
+	
+	Remove text from title that matchs this string or this regular expretion if checkbox for regullar expretion is checked.<br />
+        <br />
+        Ex 1:<br />
+        if you have titles like "U2 - 2002 - Zoorop - 02 - Numb" but you want only "Numb"
+        using regulare expresions<br />
+        "U2 - 2002 - Zoorop - \d{2} - " or<br />
+        "U2 - \d{4} - Zoorop - \d{2} - "
+        <br />
+        <br />
+        Ex. 2:
+        <br />
+        You want to remove somethisn in the end of titles "U2 - 2002 - Zoorop - 02 - Numb
+        -me" ("-me" is some kind of signature)<br />
+        " -me$" - reguler expretion takes only string from end of the line<br />
+        <br />
+        </li>
+        </ul>
+	</body>
+</html>
