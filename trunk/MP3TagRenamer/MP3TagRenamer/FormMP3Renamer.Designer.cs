@@ -826,17 +826,7 @@ namespace MP3TagRenamer
         private System.Windows.Forms.ToolStripMenuItem svenskaToolStripMenuItem;
         private UserControlFolderSelector my_folderSelector;
         private System.Windows.Forms.ToolStripMenuItem finToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewImageColumn my_play_datagridcolumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_trackNumDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_artistDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_titleDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_genreDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_albumDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_yearDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_sizeDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_commentsDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_durationDataGridViewTextBoxColumn;
-        //private System.Windows.Forms.DataGridViewTextBoxColumn dc_fileNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn my_play_datagridcolumn;        
         private System.Windows.Forms.Button Button_ExtracFromFName_Test;
         private System.Windows.Forms.Label Label_Regextpresult;
         private System.Windows.Forms.TextBox TextBox_TestPath;
