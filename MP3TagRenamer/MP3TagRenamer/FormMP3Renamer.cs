@@ -111,7 +111,7 @@ namespace MP3TagRenamer
             int _temp = 0;
             string _best_match = "";
             try
-            {
+            {				
                 foreach( string _key in hash_table.Keys )
                 {
                     if( _key != "" && ( (int)hash_table[_key] ) > _temp )
