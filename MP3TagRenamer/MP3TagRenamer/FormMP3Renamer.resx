@@ -117,90 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="my_play_datagridcolumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="My_UltraID3BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>387, 17</value>
-  </metadata>
-  <metadata name="my_play_datagridcolumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="my_play_datagridcolumn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        Qk02DwAAAAAAADYAAAAoAAAAGAAAACgAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA////////
-        ////////f39/////////////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////AAAA/39/f///////////////
-        ////////////////////////////////////////////////////////////////////////////////
-        ////////////////////////AAAA/wAAAP9/f3//////////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////AAAA/wAA
-        AP8AAAD/f39/////////////////////////////////////////////////////////////////////
-        ////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/39/f///////////////
-        ////////////////////////////////////////////////////////////////////////////////
-        ////////AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////////////////////////////////////
-        ////////////////////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/f39/////////////////////////////////////////////////////////////////////
-        ////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////
-        ////////////////////////////////////////////////////////////////////////AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////////////////////////////////////
-        ////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/f39/////////////////////////////////////////////////////////////////////
-        ////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////
-        ////////////////////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////////////////////////////////////
-        ////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/f39/////////////////////////////////////////////////////////////AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////
-        ////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////////////////////////////////////
-        ////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/f39/////////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////
-        ////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////////////////////////////AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/f39/////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////
-        ////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////////////AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/f39/////
-        ////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////////////////////////////AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/
-        f///////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/f39/////////////////////////////////////
-        ////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP9/f3//////////////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////////////////////
-        ////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/f39/////////////////////////////////////////////////////////////AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////////////////////
-        ////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/39/f///////////////////////////////////////////////////////////////
-        ////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/f39/////////////////////
-        ////////////////////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP9/f3//////////////////////////////////////////////////////////
-        ////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/39/f///////////////
-        ////////////////////////////////////////////////////////////////////////AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/f39/////////////////////////////////////////////////////
-        ////////////////////////////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP9/f3//////////
-        ////////////////////////////////////////////////////////////////////////////////
-        ////////AAAA/wAAAP8AAAD/AAAA/39/f///////////////////////////////////////////////
-        ////////////////////////////////////////////////////////AAAA/wAAAP8AAAD/f39/////
-        ////////////////////////////////////////////////////////////////////////////////
-        ////////////////////////AAAA/wAAAP9/f3//////////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////AAAA/39/
-        f///////////////////////////////////////////////////////////////////////////////
-        ////////////////////////////////////////f39/////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////
-</value>
-  </data>
-  <metadata name="My_UltraID3BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>387, 17</value>
-  </metadata>
-  <metadata name="My_FolderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>214, 17</value>
   </metadata>
   <metadata name="My_HelpProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>680, 17</value>
@@ -208,12 +126,10 @@
   <metadata name="My_MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>571, 17</value>
   </metadata>
-  <metadata name="My_HelpProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>680, 17</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>55</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAEAIABoBAAAJgAAACMgAAABACAAqBIAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAAAAA

@@ -3,4 +3,17 @@
     <StartArguments>
     </StartArguments>
   </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory>http://localhost/MP3TagRenamer/</PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+  </PropertyGroup>
 </Project>

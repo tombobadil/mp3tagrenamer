@@ -239,6 +239,7 @@ namespace MP3TagRenamer
 		{
 			if ((e.KeyCode == Keys.Return) || (e.KeyCode == Keys.Enter))
 			{
+				ActualPath = my_comboBox_Folder.Text;
 				if (ActualPathExists) {
 					OnActualPathCahnged(ActualPath);
 				}
