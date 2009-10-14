@@ -483,7 +483,7 @@ Year:   {4} ",
 
 		public void ExtractFRomFName(string userRegExpString)
 		{
-			string reg_expr = this.GetRegExpFromInput( userRegExpString);
+			string reg_expr = GetRegExpFromInput( userRegExpString);
 
 			foreach (DataGridViewRow dr in m_DataGridViewTrackList.SelectedRows)
 			{
@@ -578,7 +578,7 @@ Year:   {4} ",
 		/// Gets regular expretion that is used to extract info from file name
 		/// </summary>
 		/// <returns>Returns string - regular expretion that is used to extract info from file name</returns>
-		public string GetRegExpFromInput(string userRegExpString)
+		public static string GetRegExpFromInput(string userRegExpString)
 		{
 			string reg_exp = "";
 			try
@@ -633,17 +633,17 @@ Year:   {4} ",
 
 		}
 
-		public string ExtracFromFName_TEST(string userRegExpString)
+		public static string ExtracFromFName_TEST(string userRegExpString, string selectedTracksPath)
 		{
 			string resultString = "";
 			try
 			{
-				if (m_DataGridViewTrackList.SelectedRows.Count == 0) return "";
+				//if (m_DataGridViewTrackList.SelectedRows.Count == 0) return "";
 
-				SelectedTracksPath = m_DataGridViewTrackList.SelectedRows[0].Cells[dataGridViewTextBoxColumn10.Name].Value.ToString();
-				OnTrackListRowEnter();
+				//SelectedTracksPath = m_DataGridViewTrackList.SelectedRows[0].Cells[dataGridViewTextBoxColumn10.Name].Value.ToString();
+				//OnTrackListRowEnter();
 
-				string _t2 = this.GetRegExpFromInput(userRegExpString);
+				string _t2 = GetRegExpFromInput(userRegExpString);
 				Regex _trackinfo_regexp = new Regex(_t2, RegexOptions.Singleline);
 				//resultString = _t2 + Environment.NewLine;				
 
@@ -656,7 +656,7 @@ Year:   {4} ",
 
 
 
-				foreach (Match m in _trackinfo_regexp.Matches(SelectedTracksPath))
+				foreach (Match m in _trackinfo_regexp.Matches(selectedTracksPath))
 				{
 					// Label_Regextpresult.Text += m.Value + @"%" + m.Groups.Count + @"|";
 					IEnumerator en_ht = ht.Keys.GetEnumerator();
@@ -666,7 +666,7 @@ Year:   {4} ",
 						en_ht.MoveNext();
 						int key = (int)en_ht.Current;
 						Group g = m.Groups[i];
-						resultString += ht[key].ToString() + ":" + g.Value + Environment.NewLine;
+						resultString += string.Format("{0,-10} : {1}{2}" ,  ht[key] , g.Value , Environment.NewLine);
 					}
 				}
 			}
@@ -681,6 +681,12 @@ Year:   {4} ",
 		void DataGridViewTrackList_DataError(object sender, DataGridViewDataErrorEventArgs e)
 		{
 
+		}
+
+		private void buttonLoad_Click(object sender, EventArgs e)
+		{
+			m_ActivePath = m_UserControlFolderSelector.ActualPath;
+			FillDataGrid();
 		}
 
 

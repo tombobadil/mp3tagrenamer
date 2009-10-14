@@ -37,15 +37,30 @@ namespace MP3TagRenamer
 			this.My_UltraID3BindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.My_TabControl_BatchRen = new System.Windows.Forms.TabControl();
 			this.m_TabPageBatch = new System.Windows.Forms.TabPage();
+			this.m_UserControlBatchRenameFields = new MP3TagRenamer.UserControlBatchRenameFields();
 			this.m_TabPageRenaming = new System.Windows.Forms.TabPage();
 			this.GroupBox_ExtractFromFName = new System.Windows.Forms.GroupBox();
+			this.m_ButtonSuggest = new System.Windows.Forms.Button();
+			this.m_ButtonAddRemovePressets = new System.Windows.Forms.Button();
+			this.m_LabelRealRexExpression = new System.Windows.Forms.Label();
 			this.ComboBox_ExtractTagsFromFNmane = new System.Windows.Forms.ComboBox();
 			this.Button_ExtractFRomFName = new System.Windows.Forms.Button();
 			this.Button_regexp_properties = new System.Windows.Forms.Button();
 			this.Button_ExtracFromFName_Test = new System.Windows.Forms.Button();
 			this.Label_Regextpresult = new System.Windows.Forms.Label();
 			this.TextBox_TestPath = new System.Windows.Forms.TextBox();
+			this.m_TabPageCleaning = new System.Windows.Forms.TabPage();
+			this.my_textBox_removeText = new System.Windows.Forms.TextBox();
+			this.my_checkBox_UseRegExp = new System.Windows.Forms.CheckBox();
+			this.my_button_ClearComments = new System.Windows.Forms.Button();
+			this.my_button_removeText = new System.Windows.Forms.Button();
+			this.my_button_GetTrackNrFronTitle = new System.Windows.Forms.Button();
+			this.my_textBox_fixTitle = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.my_button_fixTitle = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
 			this.y_splitContainer_Main = new System.Windows.Forms.SplitContainer();
+			this.m_UserControlTrackList = new MP3TagRenamer.UserControlTrackList();
 			this.My_MenuStrip = new System.Windows.Forms.MenuStrip();
 			this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.batchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,19 +76,7 @@ namespace MP3TagRenamer
 			this.my_aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
 			this.My_HelpProvider = new System.Windows.Forms.HelpProvider();
-			this.m_TabPageCleaning = new System.Windows.Forms.TabPage();
-			this.my_textBox_removeText = new System.Windows.Forms.TextBox();
-			this.my_checkBox_UseRegExp = new System.Windows.Forms.CheckBox();
-			this.my_button_ClearComments = new System.Windows.Forms.Button();
-			this.my_button_removeText = new System.Windows.Forms.Button();
-			this.my_button_GetTrackNrFronTitle = new System.Windows.Forms.Button();
-			this.my_textBox_fixTitle = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.my_button_fixTitle = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.m_LabelRealRexExpression = new System.Windows.Forms.Label();
-			this.m_UserControlBatchRenameFields = new MP3TagRenamer.UserControlBatchRenameFields();
-			this.m_UserControlTrackList = new MP3TagRenamer.UserControlTrackList();
+			this.m_ToolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.My_UltraID3BindingSource)).BeginInit();
@@ -81,6 +84,7 @@ namespace MP3TagRenamer
 			this.m_TabPageBatch.SuspendLayout();
 			this.m_TabPageRenaming.SuspendLayout();
 			this.GroupBox_ExtractFromFName.SuspendLayout();
+			this.m_TabPageCleaning.SuspendLayout();
 			this.y_splitContainer_Main.Panel1.SuspendLayout();
 			this.y_splitContainer_Main.Panel2.SuspendLayout();
 			this.y_splitContainer_Main.SuspendLayout();
@@ -88,7 +92,6 @@ namespace MP3TagRenamer
 			this.toolStripContainer1.ContentPanel.SuspendLayout();
 			this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
 			this.toolStripContainer1.SuspendLayout();
-			this.m_TabPageCleaning.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -115,7 +118,7 @@ namespace MP3TagRenamer
 			this.groupBox2.Location = new System.Drawing.Point(13, 215);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(282, 87);
-			this.groupBox2.TabIndex = 1;
+			this.groupBox2.TabIndex = 2;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "ID3 V1";
 			// 
@@ -142,7 +145,7 @@ namespace MP3TagRenamer
 			this.My_TabControl_BatchRen.Name = "My_TabControl_BatchRen";
 			this.My_TabControl_BatchRen.SelectedIndex = 0;
 			this.My_TabControl_BatchRen.Size = new System.Drawing.Size(839, 206);
-			this.My_TabControl_BatchRen.TabIndex = 15;
+			this.My_TabControl_BatchRen.TabIndex = 1;
 			// 
 			// m_TabPageBatch
 			// 
@@ -154,6 +157,18 @@ namespace MP3TagRenamer
 			this.m_TabPageBatch.TabIndex = 0;
 			this.m_TabPageBatch.Text = "Batch";
 			this.m_TabPageBatch.UseVisualStyleBackColor = true;
+			// 
+			// m_UserControlBatchRenameFields
+			// 
+			this.m_UserControlBatchRenameFields.Album = "";
+			this.m_UserControlBatchRenameFields.Artist = "";
+			this.m_UserControlBatchRenameFields.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.m_UserControlBatchRenameFields.Ganre = "";
+			this.m_UserControlBatchRenameFields.Location = new System.Drawing.Point(3, 3);
+			this.m_UserControlBatchRenameFields.Name = "m_UserControlBatchRenameFields";
+			this.m_UserControlBatchRenameFields.Size = new System.Drawing.Size(825, 174);
+			this.m_UserControlBatchRenameFields.TabIndex = 0;
+			this.m_UserControlBatchRenameFields.Year = null;
 			// 
 			// m_TabPageRenaming
 			// 
@@ -170,6 +185,8 @@ namespace MP3TagRenamer
 			// 
 			this.GroupBox_ExtractFromFName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
+			this.GroupBox_ExtractFromFName.Controls.Add(this.m_ButtonSuggest);
+			this.GroupBox_ExtractFromFName.Controls.Add(this.m_ButtonAddRemovePressets);
 			this.GroupBox_ExtractFromFName.Controls.Add(this.m_LabelRealRexExpression);
 			this.GroupBox_ExtractFromFName.Controls.Add(this.ComboBox_ExtractTagsFromFNmane);
 			this.GroupBox_ExtractFromFName.Controls.Add(this.Button_ExtractFRomFName);
@@ -180,55 +197,83 @@ namespace MP3TagRenamer
 			this.GroupBox_ExtractFromFName.Location = new System.Drawing.Point(6, 3);
 			this.GroupBox_ExtractFromFName.Name = "GroupBox_ExtractFromFName";
 			this.GroupBox_ExtractFromFName.Size = new System.Drawing.Size(819, 167);
-			this.GroupBox_ExtractFromFName.TabIndex = 21;
+			this.GroupBox_ExtractFromFName.TabIndex = 0;
 			this.GroupBox_ExtractFromFName.TabStop = false;
 			this.GroupBox_ExtractFromFName.Text = "Extract tags from file name";
+			// 
+			// m_ButtonSuggest
+			// 
+			this.m_ButtonSuggest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.m_ButtonSuggest.Location = new System.Drawing.Point(738, 14);
+			this.m_ButtonSuggest.Name = "m_ButtonSuggest";
+			this.m_ButtonSuggest.Size = new System.Drawing.Size(75, 23);
+			this.m_ButtonSuggest.TabIndex = 1;
+			this.m_ButtonSuggest.Text = "Suggest";
+			this.m_ToolTip.SetToolTip(this.m_ButtonSuggest, "Suggest tags that can be used");
+			this.m_ButtonSuggest.UseVisualStyleBackColor = true;
+			this.m_ButtonSuggest.Click += new System.EventHandler(this.ButtonSuggest_Click);
+			// 
+			// m_ButtonAddRemovePressets
+			// 
+			this.m_ButtonAddRemovePressets.Location = new System.Drawing.Point(445, 43);
+			this.m_ButtonAddRemovePressets.Name = "m_ButtonAddRemovePressets";
+			this.m_ButtonAddRemovePressets.Size = new System.Drawing.Size(19, 23);
+			this.m_ButtonAddRemovePressets.TabIndex = 5;
+			this.m_ButtonAddRemovePressets.Text = "+";
+			this.m_ToolTip.SetToolTip(this.m_ButtonAddRemovePressets, "Add/Remove new definitions");
+			this.m_ButtonAddRemovePressets.UseVisualStyleBackColor = true;
+			this.m_ButtonAddRemovePressets.Click += new System.EventHandler(this.ButtonAddRemovePressets_Click);
+			// 
+			// m_LabelRealRexExpression
+			// 
+			this.m_LabelRealRexExpression.AutoSize = true;
+			this.m_LabelRealRexExpression.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.m_LabelRealRexExpression.Location = new System.Drawing.Point(513, 46);
+			this.m_LabelRealRexExpression.Name = "m_LabelRealRexExpression";
+			this.m_LabelRealRexExpression.Size = new System.Drawing.Size(56, 15);
+			this.m_LabelRealRexExpression.TabIndex = 6;
+			this.m_LabelRealRexExpression.Text = "RegExp:";
 			// 
 			// ComboBox_ExtractTagsFromFNmane
 			// 
 			this.ComboBox_ExtractTagsFromFNmane.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
 			this.ComboBox_ExtractTagsFromFNmane.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
 			this.ComboBox_ExtractTagsFromFNmane.FormattingEnabled = true;
-			this.ComboBox_ExtractTagsFromFNmane.Items.AddRange(new object[] {
-            "#artist# - #tracknr# - #album# - #year# - #title#",
-            "#artist# - #album# - #year# - #tracknr# - #title#",
-            "#artist# - #tracknr# - #album# - #title#",
-            "#artist# - #tracknr# - #title#",
-            "#artist# - #title#",
-            "#title#"});
-			this.ComboBox_ExtractTagsFromFNmane.Location = new System.Drawing.Point(6, 14);
+			this.ComboBox_ExtractTagsFromFNmane.Location = new System.Drawing.Point(6, 44);
 			this.ComboBox_ExtractTagsFromFNmane.Name = "ComboBox_ExtractTagsFromFNmane";
 			this.ComboBox_ExtractTagsFromFNmane.Size = new System.Drawing.Size(347, 21);
-			this.ComboBox_ExtractTagsFromFNmane.TabIndex = 22;
+			this.ComboBox_ExtractTagsFromFNmane.TabIndex = 2;
 			this.ComboBox_ExtractTagsFromFNmane.TextChanged += new System.EventHandler(this.ComboBox_ExtractTagsFromFNmane_TextChanged);
 			// 
 			// Button_ExtractFRomFName
 			// 
-			this.Button_ExtractFRomFName.Location = new System.Drawing.Point(358, 123);
+			this.Button_ExtractFRomFName.Location = new System.Drawing.Point(6, 71);
 			this.Button_ExtractFRomFName.Name = "Button_ExtractFRomFName";
-			this.Button_ExtractFRomFName.Size = new System.Drawing.Size(122, 38);
-			this.Button_ExtractFRomFName.TabIndex = 21;
+			this.Button_ExtractFRomFName.Size = new System.Drawing.Size(188, 25);
+			this.Button_ExtractFRomFName.TabIndex = 7;
 			this.Button_ExtractFRomFName.Text = "Extract tags from selected files";
 			this.Button_ExtractFRomFName.UseVisualStyleBackColor = true;
 			this.Button_ExtractFRomFName.Click += new System.EventHandler(this.Button_ExtractFRomFName_Click);
 			// 
 			// Button_regexp_properties
 			// 
-			this.Button_regexp_properties.Location = new System.Drawing.Point(359, 12);
+			this.Button_regexp_properties.Location = new System.Drawing.Point(470, 43);
 			this.Button_regexp_properties.Name = "Button_regexp_properties";
-			this.Button_regexp_properties.Size = new System.Drawing.Size(21, 23);
+			this.Button_regexp_properties.Size = new System.Drawing.Size(37, 23);
 			this.Button_regexp_properties.TabIndex = 20;
-			this.Button_regexp_properties.Text = "?";
+			this.Button_regexp_properties.Text = "Edit";
+			this.m_ToolTip.SetToolTip(this.Button_regexp_properties, "Edit predefind tags");
 			this.Button_regexp_properties.UseVisualStyleBackColor = true;
 			this.Button_regexp_properties.Click += new System.EventHandler(this.Button_regexp_properties_Click);
 			// 
 			// Button_ExtracFromFName_Test
 			// 
-			this.Button_ExtracFromFName_Test.Location = new System.Drawing.Point(386, 11);
+			this.Button_ExtracFromFName_Test.Location = new System.Drawing.Point(359, 42);
 			this.Button_ExtracFromFName_Test.Name = "Button_ExtracFromFName_Test";
-			this.Button_ExtracFromFName_Test.Size = new System.Drawing.Size(65, 23);
-			this.Button_ExtracFromFName_Test.TabIndex = 17;
+			this.Button_ExtracFromFName_Test.Size = new System.Drawing.Size(80, 23);
+			this.Button_ExtracFromFName_Test.TabIndex = 3;
 			this.Button_ExtracFromFName_Test.Text = "Test";
+			this.m_ToolTip.SetToolTip(this.Button_ExtracFromFName_Test, "Test expression before you run it");
 			this.Button_ExtracFromFName_Test.UseVisualStyleBackColor = true;
 			this.Button_ExtracFromFName_Test.Click += new System.EventHandler(this.Button_ExtracFromFNameTEST_Click);
 			// 
@@ -236,20 +281,130 @@ namespace MP3TagRenamer
 			// 
 			this.Label_Regextpresult.AutoEllipsis = true;
 			this.Label_Regextpresult.AutoSize = true;
-			this.Label_Regextpresult.Location = new System.Drawing.Point(6, 71);
+			this.Label_Regextpresult.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Label_Regextpresult.Location = new System.Drawing.Point(212, 68);
 			this.Label_Regextpresult.Name = "Label_Regextpresult";
-			this.Label_Regextpresult.Size = new System.Drawing.Size(0, 13);
-			this.Label_Regextpresult.TabIndex = 19;
+			this.Label_Regextpresult.Size = new System.Drawing.Size(32, 16);
+			this.Label_Regextpresult.TabIndex = 8;
+			this.Label_Regextpresult.Text = "---";
 			// 
 			// TextBox_TestPath
 			// 
 			this.TextBox_TestPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 						| System.Windows.Forms.AnchorStyles.Right)));
-			this.TextBox_TestPath.Location = new System.Drawing.Point(5, 40);
+			this.TextBox_TestPath.Location = new System.Drawing.Point(6, 16);
 			this.TextBox_TestPath.Name = "TextBox_TestPath";
 			this.TextBox_TestPath.ReadOnly = true;
-			this.TextBox_TestPath.Size = new System.Drawing.Size(808, 20);
-			this.TextBox_TestPath.TabIndex = 18;
+			this.TextBox_TestPath.Size = new System.Drawing.Size(726, 20);
+			this.TextBox_TestPath.TabIndex = 0;
+			// 
+			// m_TabPageCleaning
+			// 
+			this.m_TabPageCleaning.Controls.Add(this.my_textBox_removeText);
+			this.m_TabPageCleaning.Controls.Add(this.my_checkBox_UseRegExp);
+			this.m_TabPageCleaning.Controls.Add(this.my_button_ClearComments);
+			this.m_TabPageCleaning.Controls.Add(this.my_button_removeText);
+			this.m_TabPageCleaning.Controls.Add(this.my_button_GetTrackNrFronTitle);
+			this.m_TabPageCleaning.Controls.Add(this.my_textBox_fixTitle);
+			this.m_TabPageCleaning.Controls.Add(this.label2);
+			this.m_TabPageCleaning.Controls.Add(this.my_button_fixTitle);
+			this.m_TabPageCleaning.Controls.Add(this.label1);
+			this.m_TabPageCleaning.Location = new System.Drawing.Point(4, 22);
+			this.m_TabPageCleaning.Name = "m_TabPageCleaning";
+			this.m_TabPageCleaning.Padding = new System.Windows.Forms.Padding(3);
+			this.m_TabPageCleaning.Size = new System.Drawing.Size(831, 180);
+			this.m_TabPageCleaning.TabIndex = 2;
+			this.m_TabPageCleaning.Text = "Cleaning";
+			this.m_TabPageCleaning.UseVisualStyleBackColor = true;
+			// 
+			// my_textBox_removeText
+			// 
+			this.my_textBox_removeText.Location = new System.Drawing.Point(6, 6);
+			this.my_textBox_removeText.Name = "my_textBox_removeText";
+			this.my_textBox_removeText.Size = new System.Drawing.Size(340, 20);
+			this.my_textBox_removeText.TabIndex = 16;
+			// 
+			// my_checkBox_UseRegExp
+			// 
+			this.my_checkBox_UseRegExp.AutoSize = true;
+			this.my_checkBox_UseRegExp.Checked = true;
+			this.my_checkBox_UseRegExp.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.my_checkBox_UseRegExp.Location = new System.Drawing.Point(9, 86);
+			this.my_checkBox_UseRegExp.Name = "my_checkBox_UseRegExp";
+			this.my_checkBox_UseRegExp.Size = new System.Drawing.Size(128, 17);
+			this.my_checkBox_UseRegExp.TabIndex = 24;
+			this.my_checkBox_UseRegExp.Text = "Use regular expresion";
+			this.my_checkBox_UseRegExp.UseVisualStyleBackColor = true;
+			// 
+			// my_button_ClearComments
+			// 
+			this.my_button_ClearComments.Location = new System.Drawing.Point(158, 141);
+			this.my_button_ClearComments.Name = "my_button_ClearComments";
+			this.my_button_ClearComments.Size = new System.Drawing.Size(131, 23);
+			this.my_button_ClearComments.TabIndex = 23;
+			this.my_button_ClearComments.Text = "Clear comments";
+			this.my_button_ClearComments.UseVisualStyleBackColor = true;
+			this.my_button_ClearComments.Click += new System.EventHandler(this.Button_ClearComments_Click);
+			// 
+			// my_button_removeText
+			// 
+			this.my_button_removeText.Location = new System.Drawing.Point(352, 6);
+			this.my_button_removeText.Name = "my_button_removeText";
+			this.my_button_removeText.Size = new System.Drawing.Size(155, 23);
+			this.my_button_removeText.TabIndex = 17;
+			this.my_button_removeText.Text = "Remove text";
+			this.my_button_removeText.UseVisualStyleBackColor = true;
+			this.my_button_removeText.Click += new System.EventHandler(this.Button_removeText_Click);
+			// 
+			// my_button_GetTrackNrFronTitle
+			// 
+			this.my_button_GetTrackNrFronTitle.Location = new System.Drawing.Point(6, 141);
+			this.my_button_GetTrackNrFronTitle.Name = "my_button_GetTrackNrFronTitle";
+			this.my_button_GetTrackNrFronTitle.Size = new System.Drawing.Size(135, 23);
+			this.my_button_GetTrackNrFronTitle.TabIndex = 22;
+			this.my_button_GetTrackNrFronTitle.Text = "Get track# from title";
+			this.my_button_GetTrackNrFronTitle.UseVisualStyleBackColor = true;
+			this.my_button_GetTrackNrFronTitle.Click += new System.EventHandler(this.Button_GetTrackNrFronTitle_Click);
+			// 
+			// my_textBox_fixTitle
+			// 
+			this.My_HelpProvider.SetHelpKeyword(this.my_textBox_fixTitle, "remove_text_from_title");
+			this.My_HelpProvider.SetHelpNavigator(this.my_textBox_fixTitle, System.Windows.Forms.HelpNavigator.Find);
+			this.My_HelpProvider.SetHelpString(this.my_textBox_fixTitle, "Remove text from title that matchs this string or this regular expretion if check" +
+					"box for regullar expretion is checked ");
+			this.my_textBox_fixTitle.Location = new System.Drawing.Point(6, 60);
+			this.my_textBox_fixTitle.Name = "my_textBox_fixTitle";
+			this.My_HelpProvider.SetShowHelp(this.my_textBox_fixTitle, true);
+			this.my_textBox_fixTitle.Size = new System.Drawing.Size(340, 20);
+			this.my_textBox_fixTitle.TabIndex = 18;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(3, 106);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(257, 13);
+			this.label2.TabIndex = 21;
+			this.label2.Text = "Write regular expretion that removes things from tiltels";
+			// 
+			// my_button_fixTitle
+			// 
+			this.my_button_fixTitle.Location = new System.Drawing.Point(352, 57);
+			this.my_button_fixTitle.Name = "my_button_fixTitle";
+			this.my_button_fixTitle.Size = new System.Drawing.Size(155, 23);
+			this.my_button_fixTitle.TabIndex = 19;
+			this.my_button_fixTitle.Text = "Remove extra form title";
+			this.my_button_fixTitle.UseVisualStyleBackColor = true;
+			this.my_button_fixTitle.Click += new System.EventHandler(this.Button_fixTitle_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(6, 29);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(320, 13);
+			this.label1.TabIndex = 20;
+			this.label1.Text = "write text that you want to remove from all tags ie: www.blabla.com";
 			// 
 			// y_splitContainer_Main
 			// 
@@ -275,7 +430,18 @@ namespace MP3TagRenamer
 			this.y_splitContainer_Main.Size = new System.Drawing.Size(866, 686);
 			this.y_splitContainer_Main.SplitterDistance = 310;
 			this.y_splitContainer_Main.SplitterWidth = 5;
-			this.y_splitContainer_Main.TabIndex = 16;
+			this.y_splitContainer_Main.TabIndex = 0;
+			// 
+			// m_UserControlTrackList
+			// 
+			this.m_UserControlTrackList.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.m_UserControlTrackList.ID3V1Text = null;
+			this.m_UserControlTrackList.ID3V2Text = null;
+			this.m_UserControlTrackList.Location = new System.Drawing.Point(0, 0);
+			this.m_UserControlTrackList.Name = "m_UserControlTrackList";
+			this.m_UserControlTrackList.SelectedTracksPath = null;
+			this.m_UserControlTrackList.Size = new System.Drawing.Size(862, 367);
+			this.m_UserControlTrackList.TabIndex = 0;
 			// 
 			// My_MenuStrip
 			// 
@@ -287,7 +453,7 @@ namespace MP3TagRenamer
 			this.My_MenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.My_MenuStrip.Name = "My_MenuStrip";
 			this.My_MenuStrip.Size = new System.Drawing.Size(866, 24);
-			this.My_MenuStrip.TabIndex = 16;
+			this.My_MenuStrip.TabIndex = 0;
 			this.My_MenuStrip.Text = "menuStrip1";
 			// 
 			// viewToolStripMenuItem
@@ -410,148 +576,6 @@ namespace MP3TagRenamer
 			// 
 			this.My_HelpProvider.HelpNamespace = "Help.htm";
 			// 
-			// m_TabPageCleaning
-			// 
-			this.m_TabPageCleaning.Controls.Add(this.my_textBox_removeText);
-			this.m_TabPageCleaning.Controls.Add(this.my_checkBox_UseRegExp);
-			this.m_TabPageCleaning.Controls.Add(this.my_button_ClearComments);
-			this.m_TabPageCleaning.Controls.Add(this.my_button_removeText);
-			this.m_TabPageCleaning.Controls.Add(this.my_button_GetTrackNrFronTitle);
-			this.m_TabPageCleaning.Controls.Add(this.my_textBox_fixTitle);
-			this.m_TabPageCleaning.Controls.Add(this.label2);
-			this.m_TabPageCleaning.Controls.Add(this.my_button_fixTitle);
-			this.m_TabPageCleaning.Controls.Add(this.label1);
-			this.m_TabPageCleaning.Location = new System.Drawing.Point(4, 22);
-			this.m_TabPageCleaning.Name = "m_TabPageCleaning";
-			this.m_TabPageCleaning.Padding = new System.Windows.Forms.Padding(3);
-			this.m_TabPageCleaning.Size = new System.Drawing.Size(831, 180);
-			this.m_TabPageCleaning.TabIndex = 2;
-			this.m_TabPageCleaning.Text = "Cleaning";
-			this.m_TabPageCleaning.UseVisualStyleBackColor = true;
-			// 
-			// my_textBox_removeText
-			// 
-			this.my_textBox_removeText.Location = new System.Drawing.Point(6, 6);
-			this.my_textBox_removeText.Name = "my_textBox_removeText";
-			this.my_textBox_removeText.Size = new System.Drawing.Size(340, 20);
-			this.my_textBox_removeText.TabIndex = 16;
-			// 
-			// my_checkBox_UseRegExp
-			// 
-			this.my_checkBox_UseRegExp.AutoSize = true;
-			this.my_checkBox_UseRegExp.Checked = true;
-			this.my_checkBox_UseRegExp.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.my_checkBox_UseRegExp.Location = new System.Drawing.Point(9, 86);
-			this.my_checkBox_UseRegExp.Name = "my_checkBox_UseRegExp";
-			this.my_checkBox_UseRegExp.Size = new System.Drawing.Size(128, 17);
-			this.my_checkBox_UseRegExp.TabIndex = 24;
-			this.my_checkBox_UseRegExp.Text = "Use regular expresion";
-			this.my_checkBox_UseRegExp.UseVisualStyleBackColor = true;
-			// 
-			// my_button_ClearComments
-			// 
-			this.my_button_ClearComments.Location = new System.Drawing.Point(158, 141);
-			this.my_button_ClearComments.Name = "my_button_ClearComments";
-			this.my_button_ClearComments.Size = new System.Drawing.Size(131, 23);
-			this.my_button_ClearComments.TabIndex = 23;
-			this.my_button_ClearComments.Text = "Clear comments";
-			this.my_button_ClearComments.UseVisualStyleBackColor = true;
-			this.my_button_ClearComments.Click += new System.EventHandler(this.Button_ClearComments_Click);
-			// 
-			// my_button_removeText
-			// 
-			this.my_button_removeText.Location = new System.Drawing.Point(352, 6);
-			this.my_button_removeText.Name = "my_button_removeText";
-			this.my_button_removeText.Size = new System.Drawing.Size(155, 23);
-			this.my_button_removeText.TabIndex = 17;
-			this.my_button_removeText.Text = "Remove text";
-			this.my_button_removeText.UseVisualStyleBackColor = true;
-			this.my_button_removeText.Click += new System.EventHandler(this.Button_removeText_Click);
-			// 
-			// my_button_GetTrackNrFronTitle
-			// 
-			this.my_button_GetTrackNrFronTitle.Location = new System.Drawing.Point(6, 141);
-			this.my_button_GetTrackNrFronTitle.Name = "my_button_GetTrackNrFronTitle";
-			this.my_button_GetTrackNrFronTitle.Size = new System.Drawing.Size(135, 23);
-			this.my_button_GetTrackNrFronTitle.TabIndex = 22;
-			this.my_button_GetTrackNrFronTitle.Text = "Get track# from title";
-			this.my_button_GetTrackNrFronTitle.UseVisualStyleBackColor = true;
-			this.my_button_GetTrackNrFronTitle.Click += new System.EventHandler(this.Button_GetTrackNrFronTitle_Click);
-			// 
-			// my_textBox_fixTitle
-			// 
-			this.My_HelpProvider.SetHelpKeyword(this.my_textBox_fixTitle, "remove_text_from_title");
-			this.My_HelpProvider.SetHelpNavigator(this.my_textBox_fixTitle, System.Windows.Forms.HelpNavigator.Find);
-			this.My_HelpProvider.SetHelpString(this.my_textBox_fixTitle, "Remove text from title that matchs this string or this regular expretion if check" +
-					"box for regullar expretion is checked ");
-			this.my_textBox_fixTitle.Location = new System.Drawing.Point(6, 60);
-			this.my_textBox_fixTitle.Name = "my_textBox_fixTitle";
-			this.My_HelpProvider.SetShowHelp(this.my_textBox_fixTitle, true);
-			this.my_textBox_fixTitle.Size = new System.Drawing.Size(340, 20);
-			this.my_textBox_fixTitle.TabIndex = 18;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(3, 106);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(257, 13);
-			this.label2.TabIndex = 21;
-			this.label2.Text = "Write regular expretion that removes things from tiltels";
-			// 
-			// my_button_fixTitle
-			// 
-			this.my_button_fixTitle.Location = new System.Drawing.Point(352, 57);
-			this.my_button_fixTitle.Name = "my_button_fixTitle";
-			this.my_button_fixTitle.Size = new System.Drawing.Size(155, 23);
-			this.my_button_fixTitle.TabIndex = 19;
-			this.my_button_fixTitle.Text = "Remove extra form title";
-			this.my_button_fixTitle.UseVisualStyleBackColor = true;
-			this.my_button_fixTitle.Click += new System.EventHandler(this.Button_fixTitle_Click);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(6, 29);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(320, 13);
-			this.label1.TabIndex = 20;
-			this.label1.Text = "write text that you want to remove from all tags ie: www.blabla.com";
-			// 
-			// m_LabelRealRexExpression
-			// 
-			this.m_LabelRealRexExpression.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.m_LabelRealRexExpression.AutoSize = true;
-			this.m_LabelRealRexExpression.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.m_LabelRealRexExpression.Location = new System.Drawing.Point(457, 16);
-			this.m_LabelRealRexExpression.Name = "m_LabelRealRexExpression";
-			this.m_LabelRealRexExpression.Size = new System.Drawing.Size(56, 15);
-			this.m_LabelRealRexExpression.TabIndex = 23;
-			this.m_LabelRealRexExpression.Text = "RegExp:";
-			// 
-			// m_UserControlBatchRenameFields
-			// 
-			this.m_UserControlBatchRenameFields.Album = "";
-			this.m_UserControlBatchRenameFields.Artist = "";
-			this.m_UserControlBatchRenameFields.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlBatchRenameFields.Ganre = "";
-			this.m_UserControlBatchRenameFields.Location = new System.Drawing.Point(3, 3);
-			this.m_UserControlBatchRenameFields.Name = "m_UserControlBatchRenameFields";
-			this.m_UserControlBatchRenameFields.Size = new System.Drawing.Size(825, 174);
-			this.m_UserControlBatchRenameFields.TabIndex = 0;
-			this.m_UserControlBatchRenameFields.Year = null;
-			// 
-			// m_UserControlTrackList
-			// 
-			this.m_UserControlTrackList.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlTrackList.ID3V1Text = null;
-			this.m_UserControlTrackList.ID3V2Text = null;
-			this.m_UserControlTrackList.Location = new System.Drawing.Point(0, 0);
-			this.m_UserControlTrackList.Name = "m_UserControlTrackList";
-			this.m_UserControlTrackList.SelectedTracksPath = null;
-			this.m_UserControlTrackList.Size = new System.Drawing.Size(862, 367);
-			this.m_UserControlTrackList.TabIndex = 0;
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -573,6 +597,8 @@ namespace MP3TagRenamer
 			this.m_TabPageRenaming.ResumeLayout(false);
 			this.GroupBox_ExtractFromFName.ResumeLayout(false);
 			this.GroupBox_ExtractFromFName.PerformLayout();
+			this.m_TabPageCleaning.ResumeLayout(false);
+			this.m_TabPageCleaning.PerformLayout();
 			this.y_splitContainer_Main.Panel1.ResumeLayout(false);
 			this.y_splitContainer_Main.Panel2.ResumeLayout(false);
 			this.y_splitContainer_Main.ResumeLayout(false);
@@ -583,8 +609,6 @@ namespace MP3TagRenamer
 			this.toolStripContainer1.TopToolStripPanel.PerformLayout();
 			this.toolStripContainer1.ResumeLayout(false);
 			this.toolStripContainer1.PerformLayout();
-			this.m_TabPageCleaning.ResumeLayout(false);
-			this.m_TabPageCleaning.PerformLayout();
 			this.ResumeLayout(false);
 
         }
@@ -635,6 +659,9 @@ namespace MP3TagRenamer
 		private System.Windows.Forms.Button my_button_fixTitle;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label m_LabelRealRexExpression;
+		private System.Windows.Forms.Button m_ButtonAddRemovePressets;
+		private System.Windows.Forms.ToolTip m_ToolTip;
+		private System.Windows.Forms.Button m_ButtonSuggest;
     }
 }
 

@@ -23,5 +23,8 @@
     <Setting Name="regex_year" Type="System.String" Scope="User">
       <Value Profile="(Default)">[\d]{4}</Value>
     </Setting>
+    <Setting Name="RegExpHistoryList" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
