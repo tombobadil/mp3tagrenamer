@@ -45,19 +45,22 @@
 			this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.m_BindingSourceUltraID3 = new System.Windows.Forms.BindingSource(this.components);
 			this.m_FolderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+			this.buttonLoad = new System.Windows.Forms.Button();
+			this.panelTop = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.m_DataGridViewTrackList)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.m_BindingSourceUltraID3)).BeginInit();
+			this.panelTop.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// m_UserControlFolderSelector
 			// 
 			this.m_UserControlFolderSelector.ActualPath = "";
-			this.m_UserControlFolderSelector.Dock = System.Windows.Forms.DockStyle.Top;
+			this.m_UserControlFolderSelector.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.m_UserControlFolderSelector.Location = new System.Drawing.Point(0, 0);
 			this.m_UserControlFolderSelector.Name = "m_UserControlFolderSelector";
 			this.m_UserControlFolderSelector.Paths = new string[] {
         ""};
-			this.m_UserControlFolderSelector.Size = new System.Drawing.Size(704, 47);
+			this.m_UserControlFolderSelector.Size = new System.Drawing.Size(652, 49);
 			this.m_UserControlFolderSelector.TabIndex = 7;
 			// 
 			// m_DataGridViewTrackList
@@ -80,10 +83,10 @@
             this.dataGridViewTextBoxColumn10});
 			this.m_DataGridViewTrackList.DataSource = this.m_BindingSourceUltraID3;
 			this.m_DataGridViewTrackList.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_DataGridViewTrackList.Location = new System.Drawing.Point(0, 47);
+			this.m_DataGridViewTrackList.Location = new System.Drawing.Point(0, 49);
 			this.m_DataGridViewTrackList.Name = "m_DataGridViewTrackList";
 			this.m_DataGridViewTrackList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.m_DataGridViewTrackList.Size = new System.Drawing.Size(704, 771);
+			this.m_DataGridViewTrackList.Size = new System.Drawing.Size(704, 769);
 			this.m_DataGridViewTrackList.TabIndex = 2;
 			this.m_DataGridViewTrackList.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_MP3s_RowEnter);
 			this.m_DataGridViewTrackList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_MP3s_CellContentClick);
@@ -175,16 +178,38 @@
 			this.m_BindingSourceUltraID3.DataSource = typeof(HundredMilesSoftware.UltraID3Lib.UltraID3);
 			this.m_BindingSourceUltraID3.DataError += new System.Windows.Forms.BindingManagerDataErrorEventHandler(this.BindingSourceUltraID3_DataError);
 			// 
+			// buttonLoad
+			// 
+			this.buttonLoad.Dock = System.Windows.Forms.DockStyle.Right;
+			this.buttonLoad.Location = new System.Drawing.Point(652, 0);
+			this.buttonLoad.Name = "buttonLoad";
+			this.buttonLoad.Size = new System.Drawing.Size(52, 49);
+			this.buttonLoad.TabIndex = 8;
+			this.buttonLoad.Text = "&>>>";
+			this.buttonLoad.UseVisualStyleBackColor = true;
+			this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
+			// 
+			// panelTop
+			// 
+			this.panelTop.Controls.Add(this.m_UserControlFolderSelector);
+			this.panelTop.Controls.Add(this.buttonLoad);
+			this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelTop.Location = new System.Drawing.Point(0, 0);
+			this.panelTop.Name = "panelTop";
+			this.panelTop.Size = new System.Drawing.Size(704, 49);
+			this.panelTop.TabIndex = 9;
+			// 
 			// UserControlTrackList
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.m_DataGridViewTrackList);
-			this.Controls.Add(this.m_UserControlFolderSelector);
+			this.Controls.Add(this.panelTop);
 			this.Name = "UserControlTrackList";
 			this.Size = new System.Drawing.Size(704, 818);
 			((System.ComponentModel.ISupportInitialize)(this.m_DataGridViewTrackList)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.m_BindingSourceUltraID3)).EndInit();
+			this.panelTop.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -214,6 +239,8 @@
 		private System.Collections.Hashtable batchCounting_Year;
 		private System.Collections.Hashtable m_VisitedDirsPaths;
 		private string m_ActivePath;
+		private System.Windows.Forms.Button buttonLoad;
+		private System.Windows.Forms.Panel panelTop;
 
 
 	}

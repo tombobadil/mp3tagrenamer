@@ -1,10 +1,7 @@
 using System;
 using System.Collections;
-using System.Diagnostics;
-using System.IO;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using HundredMilesSoftware.UltraID3Lib;
+
 namespace MP3TagRenamer
 {
     public partial class MainForm : Form
@@ -15,10 +12,29 @@ namespace MP3TagRenamer
         {
             InitializeComponent();
 			SetRealRegExpLabel();
+			ResetRegExpComboBox();
 			m_UserControlBatchRenameFields.UpdateClicked += new EventHandler(Button_UpdateBatch_Click);
 			m_UserControlTrackList.BatchFieldsUpdated += new UserControlTrackList.BatchFieldsInfoHandler(UserControlTrackList_BatchFieldsUpdated);
 			m_UserControlTrackList.TrackListRowEnter += new EventHandler(UserControlTrackList_TrackListRowEnter);
         }
+
+		private void ResetRegExpComboBox()
+		{
+			string[] regExps = 
+				new string[]{	
+					"#artist# - #tracknr# - #album# - #year# - #title#",
+					"#artist# - #album# - #year# - #tracknr# - #title#",
+					"#artist# - #tracknr# - #album# - #title#",
+					"#artist# - #tracknr# - #title#",
+					"#artist# - #title#",
+					"#title#"};
+			this.ComboBox_ExtractTagsFromFNmane.Items.AddRange(regExps);
+			if (global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList != null
+				&& global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList.Count > 0) {
+					this.ComboBox_ExtractTagsFromFNmane.Items.Clear();
+					this.ComboBox_ExtractTagsFromFNmane.Items.AddRange(global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList.ToArray());
+			}
+		}
 		
 
 		void UserControlTrackList_TrackListRowEnter(object sender, EventArgs e)
@@ -83,9 +99,17 @@ namespace MP3TagRenamer
                 global::MP3TagRenamer.Properties.Settings.Default.LastUsedPath = m_UserControlTrackList.ActualPath;
                 if (global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths == null)
                     global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths = new System.Collections.Specialized.StringCollection();
-                global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths.AddRange(m_UserControlTrackList.VisitedPaths);
-                global::MP3TagRenamer.Properties.Settings.Default.Save();
+				global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths.AddRange(m_UserControlTrackList.VisitedPaths);
 
+				ArrayList regExps = new ArrayList();
+				//for (int i = 0; i < ComboBox_ExtractTagsFromFNmane.Items.Count; i++)
+				//{
+					regExps.AddRange(ComboBox_ExtractTagsFromFNmane.Items);
+				//}
+				global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList = new ArrayList();
+				global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList.AddRange(regExps);
+
+                global::MP3TagRenamer.Properties.Settings.Default.Save();
             }
             catch 
             {
@@ -97,13 +121,13 @@ namespace MP3TagRenamer
 
 		private void SetRealRegExpLabel()
 		{
-			m_LabelRealRexExpression.Text = "Real RegExp:" +  m_UserControlTrackList.GetRegExpFromInput(ComboBox_ExtractTagsFromFNmane.Text);
+			m_LabelRealRexExpression.Text = "Real RegExp:" +  UserControlTrackList.GetRegExpFromInput(ComboBox_ExtractTagsFromFNmane.Text);
 		}
 
 		private void Button_ExtracFromFNameTEST_Click(object sender, EventArgs e)
 		{
 			SetRealRegExpLabel();
-			Label_Regextpresult.Text = m_UserControlTrackList.ExtracFromFName_TEST(ComboBox_ExtractTagsFromFNmane.Text);
+			Label_Regextpresult.Text = UserControlTrackList.ExtracFromFName_TEST(ComboBox_ExtractTagsFromFNmane.Text, m_UserControlTrackList.SelectedTracksPath);
 		}
 
         private void Button_ExtractFRomFName_Click( object sender , EventArgs e )
@@ -153,6 +177,22 @@ namespace MP3TagRenamer
 		{
 			this.SetRealRegExpLabel();
 		}
+
+		private void ButtonAddRemovePressets_Click(object sender, EventArgs e)
+		{
+			FormComposePressets pressets = new FormComposePressets() { Path = this.TextBox_TestPath.Text };
+			if (pressets.ShowDialog() == DialogResult.OK) {
+				this.ComboBox_ExtractTagsFromFNmane.Items.Add(pressets.RegExp);
+				this.ComboBox_ExtractTagsFromFNmane.SelectedItem = pressets.RegExp;
+			}
+		}
+
+		private void ButtonSuggest_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		
 
 
 	}
