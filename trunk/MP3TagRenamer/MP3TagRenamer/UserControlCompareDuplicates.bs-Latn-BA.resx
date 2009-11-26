@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="My_GroupBox_Top.Text" xml:space="preserve">
+    <value>&amp;Traži u fasciklama</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="nameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="duretionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Dužina</value>
+  </data>
+  <data name="sizeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Veličina</value>
+  </data>
+  <data name="deleteDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Izbriši</value>
+  </data>
+  <data name="titleDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Naslov</value>
+  </data>
+  <data name="durationDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Dužina</value>
+  </data>
+  <data name="sizeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Veličina</value>
+  </data>
+  <data name="pathDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Mjesto</value>
+  </data>
+  <data name="Play.HeaderText" xml:space="preserve">
+    <value>Slušaj</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="my_copyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="my_copyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kopiraj</value>
+  </data>
+  <data name="my_pasteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="my_pasteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nalijepi</value>
+  </data>
+  <data name="tToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 6</value>
+  </data>
+  <data name="my_playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="my_playToolStripMenuItem.Text" xml:space="preserve">
+    <value>Slušaj</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 6</value>
+  </data>
+  <data name="my_deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="my_deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Izbriši</value>
+  </data>
+  <data name="my_contextMenuStrip_Duplicates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 104</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALzSURBVDhPdZN7SBNxHMCnOR9pEVg6d9Pt7uY2pzan+BhK
+        l2gQpYGQYUSaWZKaimaPP4KD6J8CJcFKLYoshOxFIYEZrYePSAU1H2TOs/Jk7tQ9RCESf31/xxZFOvhw
+        x8Hn8/ve7/aTIIS8AG9gE+ADSNfW1vyAACAQ2ArPtsE1GAgBwgAFPFPBlZa4A14si7xZs9mnqalfWl8/
+        4cfe5fx568Jh3mbvtQmC4HC6kHXO/p232ttfdnH7TMfblRBQ/wn8NYUU7oNmhcVuLG3Elym+br2A+ArT
+        VuEOFm0LdtQ1xqHHPaPo/rsh9LB7BL34NI6GLLwYdrmWS8QJ8PjuCcTAN37RJSw60AOQmjsH1uXNsAXZ
+        XUvtOODtDng20dcK78zbFjaUcfTZxzHkdC49cQfMeGVxdcDX7nTW4BEHLTOo5e3gf6GnIE/+mF1dWVk5
+        hAM+LCsGRJnjkL+eKZA137ot7jyGmxXQ6PQs+jozh/BkdodruWdgvBw2UYMD0lx2xBd/eywzuQ1BSop+
+        pVSRiNmdjhpu3Pw1YeH65ucdg8K8vX1OcNQ+6ODiaKZKDa4OB3wLWLM/lg9W9QTQtKYRyx5oXVx+S8dk
+        SJuZk0kkEuJeJx9RUjdMUbsqIsUA/sdhsZjt36zVRlf+I2sNl9LK3++Iyb4WeqV1XF59/XM4RFQnr/bR
+        ZFqZBtxoHAhkSs1BscbkAyCvegIUFfkoq7p/e3LR89D4nLowRUo+kVrxISKtpJOCSKTSVKwDNwYHttDG
+        DBNBKJwemaSo3syyVrnpVEdI/JHGsMj9lwkq83yEkqlU6bNr1dr0i9qIpEI9uDslbW1tMiVJWjyyiqSm
+        ErKqdclFr0OxbHDLmj1nSHV6Da3LuKBRGo9GKVKOxcIexOEJgkmd8XSYnPhJEIST0qem6ZkamTbzrFzN
+        nFNQqRXiynRKqZpMPKHBo4cn5kerkgoNEEjAAXxEQ/Ly8vbmwM99XOVwDQfwiSPxscXfHIjCGwcYACOQ
+        9BsO+XDDRqkpYwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 22</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.Text" xml:space="preserve">
+    <value>&amp;Nađi duplikate</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADnSURBVDhPY/hPIWAA6efi4vrPxsYGx+vXryfaWIbDhw//
+        Z2BgwIsvXbqE08BRA/7/Z3h04cL//szM/zNnzsSJ3759izsQv1+79v9pVRWKgos1Nf/Pl5aC8dcnT/BG
+        KQO6Ab+/fPm/39MTKz4eF4dhGNiAexER/+8GBoLxbSAm2QBkL/z59u3/mdxcrPhSfT12F6CHAdHpGKgQ
+        IwxAmg/6+/8/4OMDxidTU//fnDQJjB+tXo3pgm8XL/5/kJj4//X06XCMKwwOBQdjGvDn8+f/71au/P9x
+        5044PhwS8v9QUBAGBrkGHQAAhzoObizYGCsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.Text" xml:space="preserve">
+    <value>&amp;Traži i u podfasciklama</value>
+  </data>
+  <data name="toolStripButtonViewDeleteList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIISURBVDhPpZP7S1NxGMbPPxKaXVUkMEq8IpKUCoY/hGgI
+        ymqkDYYXcCjDZOANURSjCNGFQUTsl4GXVMxKk62YU4fXQpaIlygHQxBRH8/zwvyaIAYe+HLgnPN8nue9
+        HA3nvDTq63oW/jm13XOwvPTB3DYFY5MH+bXfcN8ygfTSMSSXfESicQDxBqdYHwH29g9w2tnZ3UcguIvN
+        rR3417exuBJE5N1n/wfwLgXEOc38Bc6xNRHb+/y4nm49G0Bnit2zf9H6bkliE/jKuYxrd6oVgDWfjB+K
+        TWeKMyrGEVfowITvD9re/9ABVQrAhh0HHK+ZselMMaN/mvwtDb+aVqkA7HYIwIj3ysfluPTorJnP6Ezx
+        oHsD1s5ZXEktUwCOioB5f1CEPR9+wTG6iuiserTo8dkwng7HT/R+XUPF8xlcTjErAOdMcW6NW8STiwG8
+        7vej8oUPN/PsEv3t8Ao0TZP3T1u8uJRkUgAuSYHtO97oLxmXd5t9Ho8aPTK+GzntqNfrLm2fFoihwYOI
+        xGIF4KjoGBLzY1OrF9k6OOFxnwDC4wxIMX1G0pMhgVyMNyoA13PAtS7OrJk1PrC69LUdQWxuF6IybHrX
+        LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
+        KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="toolStripButtonViewDeleteList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 22</value>
+  </data>
+  <data name="toolStripButtonViewDeleteList.Text" xml:space="preserve">
+    <value>&amp;Vidi izabrane fajlove</value>
+  </data>
+  <data name="toolStripButtonClearDirectories.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGfSURBVDhPjZO/S8NAFMevaYvgKOri6ioiTg6ii1hIQ+5X
+        ESVzHZ2cswgVHBWxoBYpouCgk+DUv8FJbS4VFCcHXRxE9HyXH2cS2+rBI3fHe5/3fS/vEILlUbrkEVJT
+        +7+WsO0JwdiycJxRKWUOdShdvCHkyydECkK2+wE8yxr3y+VX5ethuhcA4NBQF7H1gtxxPgY+z7EfJH15
+        qlYHkaxU8gLjsyQEytlNKmlzPuJb1qP2Mc33NmNTgQK1+kEeOB+CQC+R4MPDeAbCchoQQ3yMT5NK4HzY
+        xvhayzbNT9gvROrSgBgC9OMUJOqPajT0hyRK+w3QSmz7JAsRlK7o4LD2PgBCzruoaPwLAHUfdSshumu0
+        XLeAeimAKdvJ/M5adk7UuTUHkLAEA2Dhv4QGbaQGCmC6J5lhU5D6dLWoAQLT9cw0Nn+6rRLIXJeJbcp6
+        vYh8xmYzNV+EEsPA0FBgoHI/lYjSLXTP2PwtIW/RY7q6LJUG4oD01zUQcg0Y84MAAuPc4XxN9cCARzEM
+        9FX1OFRPMmYon4TlfUo3O44zCXeFb/XEn0k8jx5zAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="toolStripButtonClearDirectories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="toolStripButtonClearDirectories.Text" xml:space="preserve">
+    <value>&amp;Izbriši fascikle</value>
+  </data>
+  <data name="toolStripButtonShowHideDirectoryList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIISURBVDhPpZP7S1NxGMbPPxKaXVUkMEq8IpKUCoY/hGgI
+        ymqkDYYXcCjDZOANURSjCNGFQUTsl4GXVMxKk62YU4fXQpaIlygHQxBRH8/zwvyaIAYe+HLgnPN8nue9
+        HA3nvDTq63oW/jm13XOwvPTB3DYFY5MH+bXfcN8ygfTSMSSXfESicQDxBqdYHwH29g9w2tnZ3UcguIvN
+        rR3417exuBJE5N1n/wfwLgXEOc38Bc6xNRHb+/y4nm49G0Bnit2zf9H6bkliE/jKuYxrd6oVgDWfjB+K
+        TWeKMyrGEVfowITvD9re/9ABVQrAhh0HHK+ZselMMaN/mvwtDb+aVqkA7HYIwIj3ysfluPTorJnP6Ezx
+        oHsD1s5ZXEktUwCOioB5f1CEPR9+wTG6iuiserTo8dkwng7HT/R+XUPF8xlcTjErAOdMcW6NW8STiwG8
+        7vej8oUPN/PsEv3t8Ao0TZP3T1u8uJRkUgAuSYHtO97oLxmXd5t9Ho8aPTK+GzntqNfrLm2fFoihwYOI
+        xGIF4KjoGBLzY1OrF9k6OOFxnwDC4wxIMX1G0pMhgVyMNyoA13PAtS7OrJk1PrC69LUdQWxuF6IybHrX
+        LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
+        KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="toolStripButtonShowHideDirectoryList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 22</value>
+  </data>
+  <data name="toolStripButtonShowHideDirectoryList.Text" xml:space="preserve">
+    <value>Sakrij listu fascikla</value>
+  </data>
+</root>

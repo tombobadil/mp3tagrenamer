@@ -140,13 +140,29 @@
       <DependentUpon>FormComposePressets.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMP3Renamer.bs-Latn-BA.resx">
+      <DependentUpon>FormMP3Renamer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResourceTexts.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceTexts.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBatchRenameFields.bs-Latn-BA.resx">
+      <DependentUpon>UserControlBatchRenameFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlBatchRenameFields.resx">
       <DependentUpon>UserControlBatchRenameFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBatchRenameFields.sv-SE.resx">
+      <DependentUpon>UserControlBatchRenameFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCompareDuplicates.bs-Latn-BA.resx">
+      <DependentUpon>UserControlCompareDuplicates.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlCompareDuplicates.resx">
@@ -156,6 +172,14 @@
     <EmbeddedResource Include="FormDeleteFileList.resx">
       <SubType>Designer</SubType>
       <DependentUpon>FormDeleteFileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCompareDuplicates.sv-SE.resx">
+      <DependentUpon>UserControlCompareDuplicates.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolderSelector.bs-Latn-BA.resx">
+      <DependentUpon>UserControlFolderSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlFolderSelector.resx">
       <SubType>Designer</SubType>
@@ -182,7 +206,19 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolderSelector.sv-SE.resx">
+      <DependentUpon>UserControlFolderSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTrackList.bs-Latn-BA.resx">
+      <DependentUpon>UserControlTrackList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlTrackList.resx">
+      <DependentUpon>UserControlTrackList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTrackList.sv-SE.resx">
       <DependentUpon>UserControlTrackList.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -214,6 +250,9 @@
     <Content Include="Help.htm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\toolStripButtonFindDuplicates.Image.png" />
+    <None Include="Resources\toolStripButtonClearDirectories.Image.png" />
+    <None Include="Resources\toolStripButtonIncluedeSubdirectories.Image.png" />
     <None Include="Icons\close_icon.gif" />
     <None Include="Properties\DataSources\HundredMilesSoftware.UltraID3Lib.ID3v1Tag.datasource" />
     <None Include="Properties\DataSources\MP3TagRenamer.MP3TagEditor.Mp3TagEditor.datasource" />

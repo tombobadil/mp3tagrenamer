@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace MP3TagRenamer
 {
@@ -10,12 +11,46 @@ namespace MP3TagRenamer
             
         public MainForm()
         {
+            InitializeCulture();            
             InitializeComponent();
+            InitializeLanguageMenu();
 			SetRealRegExpLabel();
 			ResetRegExpComboBox();
 			m_UserControlBatchRenameFields.UpdateClicked += new EventHandler(Button_UpdateBatch_Click);
 			m_UserControlTrackList.BatchFieldsUpdated += new UserControlTrackList.BatchFieldsInfoHandler(UserControlTrackList_BatchFieldsUpdated);
 			m_UserControlTrackList.TrackListRowEnter += new EventHandler(UserControlTrackList_TrackListRowEnter);
+        }
+        private void InitializeCulture()
+        {
+            try
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed);               
+            }
+            catch { }
+        }
+        
+        private void InitializeLanguageMenu()
+        {
+            try
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed);
+                englishToolStripMenuItem.Checked = false;
+                svenskaToolStripMenuItem.Checked = false;
+                bosniskaToolStripMenuItem.Checked = false;
+                switch (global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed)
+                {
+                    case "bs-Latn-BA":
+                        bosniskaToolStripMenuItem.Checked = true;
+                        break;
+                    case "sv-SE":
+                        svenskaToolStripMenuItem.Checked = true;
+                        break;
+                    default:
+                        englishToolStripMenuItem.Checked = true;
+                        break;
+                }
+            }
+            catch { }
         }
 
 		private void ResetRegExpComboBox()
@@ -191,6 +226,27 @@ namespace MP3TagRenamer
 		{
 
 		}
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed = "en-GB";
+            global::MP3TagRenamer.Properties.Settings.Default.Save();
+            throw new ApplicationException();  
+        }
+
+        private void svenskaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed = "sv-SE";
+            global::MP3TagRenamer.Properties.Settings.Default.Save();
+            throw new ApplicationException();  
+        }
+
+        private void bosniskaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed = "bs-Latn-BA";
+            global::MP3TagRenamer.Properties.Settings.Default.Save();
+            throw new ApplicationException();          
+        }
 
 		
 

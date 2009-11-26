@@ -117,92 +117,844 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="my_dataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="Play.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="my_contextMenuStrip_Duplicates.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>128, 17</value>
-  </metadata>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>345, 17</value>
-  </metadata>
+  <data name="&gt;&gt;my_id3Info_dc_title.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="my_dataGridView_Duplicates.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
-        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
-        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
-        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
-        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
-        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
-        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
-        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
-        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
-        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
-</value>
+  <data name="folderSelector1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1032, 47</value>
   </data>
-  <data name="toolStripButtonIncluedeSubdirectories.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
-        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
-        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
-        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
-        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
-        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
-        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
-        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
-        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
-        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="toolStripButtonViewDeleteList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
-        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
-        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
-        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
-        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
-        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
-        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
-        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
-        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
-        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;durationDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>durationDataGridViewTextBoxColumn</value>
   </data>
   <data name="toolStripButtonClearDirectories.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
-        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
-        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
-        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
-        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
-        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
-        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
-        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
-        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
-        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAGcSURBVDhPjZM9SwNBEIY3lwTBUtTG1lZErCxEGzFN7vYr
+        iHJ1LK2srxEiWCpiQA0SRMFCK8Eqv8HSu70IipWFNhYius7ex3q3JtGF4W6XmWfemZ1FCFZA6UpASEP9
+        /7WE40wJxlaF645LKQuoS+myT8hXSIgUhOwOAgTV6mRo26/KN8D0IALApqUOUusHueN8AnyeUz9I+vJU
+        rw8jWasVBcYXWQiUs59V4nM+BpkftY9tv/uMzUQK1BoEeeB8BAKDTIKPAOM5CCtoQAoJMT7PKoH9sY/x
+        rZZt25/wv5SoywNSCNBPc5CkP6rR0B+SKe03QCtxnDMTIihd08Fx7QMAhFz2UNH6FwDqPulVQnLW6nhe
+        CfVTAFO2Z1xnw5wTte8sACQuwQJYfJfQoK3cQAFM98QYNgVpztbLGiAw3TSmsf3TbZVAFnpMbFs2m2UU
+        MjZv1HwVS4wDY0ORgcrDXCJKd9A9Y4twx2/JY7q5rlSG0oD817MQ8iwY86MIAuPc5XxD9cCCRzEK9HX1
+        OFRPDLOUT8aKIaXbXdedhrPSN1O9n290IwNqAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="pathDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="my_copyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_duration.Name" xml:space="preserve">
+    <value>my_fileinfo_dc_duration</value>
+  </data>
+  <data name="&gt;&gt;my_checkedListBox_FolderList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;folderSelector1.Name" xml:space="preserve">
+    <value>folderSelector1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="my_splitContainer.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_name.Name" xml:space="preserve">
+    <value>my_fileinfo_dc_name</value>
+  </data>
+  <data name="my_splitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="My_GroupBox_Top.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="checkedListBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_main_panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_path.Name" xml:space="preserve">
+    <value>my_id3Info_dc_path</value>
+  </data>
+  <data name="duplicateIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Duplicate_Id</value>
+  </data>
+  <data name="idDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="toolStripButtonShowHideDirectoryList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView_Duplicates.Name" xml:space="preserve">
+    <value>my_dataGridView_Duplicates</value>
+  </data>
+  <data name="my_splitContainer_DS.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;my_checkedListBox_FolderList.Name" xml:space="preserve">
+    <value>my_checkedListBox_FolderList</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_size.Name" xml:space="preserve">
+    <value>my_fileinfo_dc_size</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Name" xml:space="preserve">
+    <value>checkedListBox1</value>
+  </data>
+  <data name="my_main_panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonShowHideDirectoryList.Name" xml:space="preserve">
+    <value>toolStripButtonShowHideDirectoryList</value>
+  </data>
+  <data name="my_copyToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+C</value>
+  </data>
+  <data name="my_playToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+P</value>
+  </data>
+  <data name="my_dataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="duretionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Duretion</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Play.HeaderText" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel2.Name" xml:space="preserve">
+    <value>my_splitContainer_DS.Panel2</value>
+  </data>
+  <data name="&gt;&gt;titleDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="my_folderSelector.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;tToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="my_folderSelector.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="my_splitContainer.Panel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.Text" xml:space="preserve">
+    <value>Find duplicates</value>
+  </data>
+  <data name="My_GroupBox_Top.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Name" xml:space="preserve">
+    <value>my_splitContainer_DS</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonViewDeleteList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pathDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="my_splitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>211</value>
+  </data>
+  <data name="&gt;&gt;my_checkedListBox_FolderList.Parent" xml:space="preserve">
+    <value>My_GroupBox_Top</value>
+  </data>
+  <data name="&gt;&gt;my_folderSelector.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.ToolTipText" xml:space="preserve">
+    <value>Find duplicates in directories</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 6</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView_Duplicates.Parent" xml:space="preserve">
+    <value>my_splitContainer_DS.Panel2</value>
+  </data>
+  <data name="&gt;&gt;my_dataSet.Name" xml:space="preserve">
+    <value>my_dataSet</value>
+  </data>
+  <data name="my_splitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView_Duplicates.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.Text" xml:space="preserve">
+    <value>Incluede Subdirectories</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UserControlCompareDuplicates</value>
+  </data>
+  <data name="My_GroupBox_Top.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;my_dataSet.Type" xml:space="preserve">
+    <value>System.Data.DataSet, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonViewDeleteList.Name" xml:space="preserve">
+    <value>toolStripButtonViewDeleteList</value>
+  </data>
+  <data name="&gt;&gt;My_GroupBox_Top.Parent" xml:space="preserve">
+    <value>my_splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;my_main_panel.Name" xml:space="preserve">
+    <value>my_main_panel</value>
+  </data>
+  <data name="my_folderSelector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 48</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_artist.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="idDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="my_main_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 806</value>
+  </data>
+  <data name="my_splitContainer.SplitterWidth" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;my_checkedListBox_FolderList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="my_checkedListBox_FolderList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 3, 10, 3</value>
+  </data>
+  <data name="&gt;&gt;idDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>idDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="titleDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="my_dataGridView_Duplicates.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;deleteDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_dataTable_FileInfo.Type" xml:space="preserve">
+    <value>System.Data.DataTable, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripButtonViewDeleteList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;Play.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_size.Name" xml:space="preserve">
+    <value>my_id3Info_dc_size</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView.Parent" xml:space="preserve">
+    <value>my_splitContainer_DS.Panel1</value>
+  </data>
+  <data name="&gt;&gt;my_pasteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_main_panel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonClearDirectories.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Parent" xml:space="preserve">
+    <value>my_main_panel</value>
+  </data>
+  <data name="&gt;&gt;my_deleteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="my_checkedListBox_FolderList.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="my_pasteToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+P</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel1.Name" xml:space="preserve">
+    <value>my_splitContainer_DS.Panel1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>my_main_panel</value>
+  </data>
+  <data name="tToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 6</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.ToolTipText" xml:space="preserve">
+    <value>Incluede Subdirectories in search</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel2.Parent" xml:space="preserve">
+    <value>my_splitContainer</value>
+  </data>
+  <data name="my_checkedListBox_FolderList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="My_GroupBox_Top.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAALwSURBVDhPdZN7SFNRHICnOR9pEVg6da9779zm1OYUH0Pp
+        JhpEaSBkGJFmlqSmotnjj+BC9E+BkmClFkUmQutFIYEZrYePSAU1H2TNK+HG5nXebaIQiaffuWxRpIOP
+        My583/nt3B0RQsgP8Ae2AAGAeH19PQgIAUKB7fBsB6zhQAQQBUjhmRJWSuQN+DEM8mfM5oC2tmFxc/NM
+        EHOfDbbanUetC/zgAufkXG4Psjv4H1Y73/2qjz1gPNmtgIDqT+CvKcTwPczGLfVjaTO+zlqbNgoIP2HO
+        zt3D4oKTR31TLHoyMIkevh9Dj/on0MvP02jMYhXCHs9KhTABHt87gRCYty95uCUX6gSpvXdkQ96OWxDv
+        We7GAX9vwHeIgXZukbMuODeVcfT5pynkdi8/9QbMeGdhdyCQd7sb8IijlnnU8W70v9AzkFmbY211dfUI
+        DgQwjBAQZJZFwTq6RNJ+565w8hjWxqHJORv6Nu9AeDLe5VkZGJmuhkNU44C4kJkIxO8ey3RhS5iCpF4r
+        lASi92ajllu3f81Y2KHFRdcot8h3OzhXY2cPm0TRdSpwtTgQWMKYg7F8uG4ghKLUrVj2QWmTijt6vkeY
+        zKxEJBLFPOi1yiuaxklyT02sEMD/OCyWM8NbNZr42n9kjf5KVvWHXQn5NyKvdU1H19/8IoOI8vT1IYrI
+        qlKDG48DoXSlOSzRkH4I5DVfgCRjH+fVD+9ML3sRmVzQFCXNKI7JrPkoz6roJSESqzCWa8FNwIFtlCHH
+        KJMr3D6ZIMnB3KquaOOZnojkY61RsQevxpC5F+UKulapy29UabIva+RppTpwd4tMJpNEQRAWn6wkyNmU
+        vHptetmbSCzrvbJ63zlCld1AaXMuqRWG43HSjBOJcAZJeIJwQms4K5XJfwJuUpeZpaMbJJrc89Eq+oKU
+        zKwRdqYyKlVE6ik1Hl2WWhyvTCvVQyAFB/AVjSgqKtpfAB/vdY2GVQbgG0fga4vfORCHDw7QAwYg7TdO
+        UXDsZEXzhAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel1.Parent" xml:space="preserve">
+    <value>my_splitContainer</value>
+  </data>
+  <data name="&gt;&gt;durationDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>deleteDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="toolStripButtonViewDeleteList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAIISURBVDhPpZP7S1NxGMbPPxKaXVUkMEq8IpKUCoY/hGgI
+        ymqkDYYXcCjDZOANURSjCNGFQUTsl4GXVMxKk62YU4fXQpaIlygHQxBRH8/zwvyaIAYe+HLgnPN8nue9
+        HA3nvDTq63oW/jm13XOwvPTB3DYFY5MH+bXfcN8ygfTSMSSXfESicQDxBqdYHwH29g9w2tnZ3UcguIvN
+        rR3417exuBJE5N1n/wfwLgXEOc38Bc6xNRHb+/y4nm49G0Bnit2zf9H6bkliE/jKuYxrd6oVgDWfjB+K
+        TWeKMyrGEVfowITvD9re/9ABVQrAhh0HHK+ZselMMaN/mvwtDb+aVqkA7HYIwIj3ysfluPTorJnP6Ezx
+        oHsD1s5ZXEktUwCOioB5f1CEPR9+wTG6iuiserTo8dkwng7HT/R+XUPF8xlcTjErAOdMcW6NW8STiwG8
+        7vej8oUPN/PsEv3t8Ao0TZP3T1u8uJRkUgAuSYHtO97oLxmXd5t9Ho8aPTK+GzntqNfrLm2fFoihwYOI
+        xGIF4KjoGBLzY1OrF9k6OOFxnwDC4wxIMX1G0pMhgVyMNyoA13PAtS7OrJk1PrC69LUdQWxuF6IybHrX
+        LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
+        KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="checkedListBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 63</value>
+  </data>
+  <data name="my_deleteToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Del</value>
+  </data>
+  <data name="&gt;&gt;sizeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>sizeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;My_GroupBox_Top.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="my_splitContainer_DS.SplitterDistance" type="System.Int32, mscorlib">
+    <value>279</value>
+  </data>
+  <data name="&gt;&gt;my_main_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;duplicateIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_playToolStripMenuItem.Name" xml:space="preserve">
+    <value>my_playToolStripMenuItem</value>
+  </data>
+  <data name="folderSelector1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_copyToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_size.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;My_GroupBox_Top.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_delete.Name" xml:space="preserve">
+    <value>my_id3Info_dc_delete</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="folderSelector1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;my_folderSelector.Name" xml:space="preserve">
+    <value>my_folderSelector</value>
+  </data>
+  <data name="my_dataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 279</value>
+  </data>
+  <data name="&gt;&gt;folderSelector1.Type" xml:space="preserve">
+    <value>MP3TagRenamer.UserControlFolderSelector, MP3TagRenamer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;my_folderSelector.Parent" xml:space="preserve">
+    <value>My_GroupBox_Top</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Parent" xml:space="preserve">
+    <value>my_splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;my_dataTable_FileInfo.Name" xml:space="preserve">
+    <value>my_dataTable_FileInfo</value>
+  </data>
+  <data name="my_splitContainer_DS.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="toolStripButtonClearDirectories.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="my_folderSelector.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 13</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;my_dataTable_ID3Info.Name" xml:space="preserve">
+    <value>my_dataTable_ID3Info</value>
+  </data>
+  <data name="&gt;&gt;my_playToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Name" xml:space="preserve">
+    <value>my_splitContainer</value>
+  </data>
+  <data name="checkedListBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="my_splitContainer_DS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 560</value>
+  </data>
+  <data name="my_copyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_duration.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="folderSelector1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="&gt;&gt;duretionDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>duretionDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="sizeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel2.Parent" xml:space="preserve">
+    <value>my_splitContainer_DS</value>
+  </data>
+  <data name="My_GroupBox_Top.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="my_pasteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="My_GroupBox_Top.Text" xml:space="preserve">
+    <value>Search in directories</value>
+  </data>
+  <data name="my_splitContainer_DS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="my_pasteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="sizeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="&gt;&gt;tToolStripMenuItem.Name" xml:space="preserve">
+    <value>tToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_name.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="my_splitContainer.Panel2.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonIncluedeSubdirectories.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_duration.Name" xml:space="preserve">
+    <value>my_id3Info_dc_duration</value>
+  </data>
+  <data name="my_dataGridView_Duplicates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 277</value>
+  </data>
+  <data name="my_playToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonIncluedeSubdirectories.Name" xml:space="preserve">
+    <value>toolStripButtonIncluedeSubdirectories</value>
+  </data>
+  <data name="toolStripButtonIncluedeSubdirectories.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAADnSURBVDhPY/hPIWAA6efi4vrPxsYGx+vXryfaWIbDhw//
+        Z2BgwIsvXbqE08BRA/7/Z3h04cL//szM/zNnzsSJ3759izsQv1+79v9pVRWKgos1Nf/Pl5aC8dcnT/BG
+        KQO6Ab+/fPm/39MTKz4eF4dhGNiAexER/+8GBoLxbSAm2QBkL/z59u3/mdxcrPhSfT12F6CHAdHpGKgQ
+        IwxAmg/6+/8/4OMDxidTU//fnDQJjB+tXo3pgm8XL/5/kJj4//X06XCMKwwOBQdjGvDn8+f/71au/P9x
+        5044PhwS8v9QUBAGBrkGHQAAhzoObizYGCsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;my_copyToolStripMenuItem.Name" xml:space="preserve">
+    <value>my_copyToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_id.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripButtonClearDirectories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="duplicateIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripButtonShowHideDirectoryList.Text" xml:space="preserve">
+    <value>Hide direcory list</value>
+  </data>
+  <data name="my_splitContainer_DS.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_path.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_contextMenuStrip_Duplicates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel1.Name" xml:space="preserve">
+    <value>my_splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_id.Name" xml:space="preserve">
+    <value>my_fileinfo_dc_id</value>
+  </data>
+  <data name="my_splitContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="my_deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="my_main_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_duration.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripButtonViewDeleteList.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;checkedListBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="my_checkedListBox_FolderList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1004, 139</value>
+  </data>
+  <data name="&gt;&gt;Play.Name" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonFindDuplicates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sizeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>sizeDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="my_main_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripButtonFindDuplicates.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;my_deleteToolStripMenuItem.Name" xml:space="preserve">
+    <value>my_deleteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_dupl_id.Name" xml:space="preserve">
+    <value>my_id3Info_dc_dupl_id</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 25</value>
+  </data>
+  <data name="durationDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="my_contextMenuStrip_Duplicates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 104</value>
+  </data>
+  <data name="my_dataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_title.Name" xml:space="preserve">
+    <value>my_id3Info_dc_title</value>
+  </data>
+  <data name="my_folderSelector.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="My_GroupBox_Top.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="my_deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="&gt;&gt;My_GroupBox_Top.Name" xml:space="preserve">
+    <value>My_GroupBox_Top</value>
+  </data>
+  <data name="&gt;&gt;sizeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;duretionDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="deleteDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="toolStripButtonViewDeleteList.Text" xml:space="preserve">
+    <value>View selected files</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView.Name" xml:space="preserve">
+    <value>my_dataGridView</value>
+  </data>
+  <data name="toolStripButtonClearDirectories.Text" xml:space="preserve">
+    <value>Clear directories</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel2.Name" xml:space="preserve">
+    <value>my_splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;my_contextMenuStrip_Duplicates.Name" xml:space="preserve">
+    <value>my_contextMenuStrip_Duplicates</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_dupl_id.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkedListBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1032, 109</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.Panel1.Parent" xml:space="preserve">
+    <value>my_splitContainer_DS</value>
+  </data>
+  <data name="my_dataGridView_Duplicates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;artistDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="artistDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="&gt;&gt;my_fileinfo_dc_size.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sizeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_folderSelector.Type" xml:space="preserve">
+    <value>MP3TagRenamer.UserControlFolderSelector, MP3TagRenamer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="My_GroupBox_Top.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 211</value>
+  </data>
+  <data name="&gt;&gt;my_dataTable_ID3Info.Type" xml:space="preserve">
+    <value>System.Data.DataTable, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonFindDuplicates.Name" xml:space="preserve">
+    <value>toolStripButtonFindDuplicates</value>
+  </data>
+  <data name="&gt;&gt;my_dataGridView_Duplicates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="my_splitContainer.Panel1MinSize" type="System.Int32, mscorlib">
+    <value>195</value>
+  </data>
+  <data name="toolStripButtonShowHideDirectoryList.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>pathDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;artistDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>artistDataGridViewTextBoxColumn</value>
   </data>
   <data name="toolStripButtonShowHideDirectoryList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
-        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
-        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
-        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
-        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
-        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
-        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
-        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
-        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
-        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAIISURBVDhPpZP7S1NxGMbPPxKaXVUkMEq8IpKUCoY/hGgI
+        ymqkDYYXcCjDZOANURSjCNGFQUTsl4GXVMxKk62YU4fXQpaIlygHQxBRH8/zwvyaIAYe+HLgnPN8nue9
+        HA3nvDTq63oW/jm13XOwvPTB3DYFY5MH+bXfcN8ygfTSMSSXfESicQDxBqdYHwH29g9w2tnZ3UcguIvN
+        rR3417exuBJE5N1n/wfwLgXEOc38Bc6xNRHb+/y4nm49G0Bnit2zf9H6bkliE/jKuYxrd6oVgDWfjB+K
+        TWeKMyrGEVfowITvD9re/9ABVQrAhh0HHK+ZselMMaN/mvwtDb+aVqkA7HYIwIj3ysfluPTorJnP6Ezx
+        oHsD1s5ZXEktUwCOioB5f1CEPR9+wTG6iuiserTo8dkwng7HT/R+XUPF8xlcTjErAOdMcW6NW8STiwG8
+        7vej8oUPN/PsEv3t8Ao0TZP3T1u8uJRkUgAuSYHtO97oLxmXd5t9Ho8aPTK+GzntqNfrLm2fFoihwYOI
+        xGIF4KjoGBLzY1OrF9k6OOFxnwDC4wxIMX1G0pMhgVyMNyoA13PAtS7OrJk1PrC69LUdQWxuF6IybHrX
+        LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
+        KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="my_playToolStripMenuItem.Text" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="my_dataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;titleDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>titleDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer_DS.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;idDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_pasteToolStripMenuItem.Name" xml:space="preserve">
+    <value>my_pasteToolStripMenuItem</value>
+  </data>
+  <data name="my_splitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 781</value>
+  </data>
+  <data name="my_checkedListBox_FolderList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 69</value>
+  </data>
+  <data name="&gt;&gt;duplicateIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>duplicateIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonShowHideDirectoryList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_splitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_artist.Name" xml:space="preserve">
+    <value>my_id3Info_dc_artist</value>
+  </data>
+  <data name="toolStripButtonClearDirectories.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonClearDirectories.Name" xml:space="preserve">
+    <value>toolStripButtonClearDirectories</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;my_id3Info_dc_delete.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 806</value>
+  </data>
+  <metadata name="Play.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="my_dataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="my_contextMenuStrip_Duplicates.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>128, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>bosanski (Bosna i Hercegovina)</value>
+  </metadata>
 </root>

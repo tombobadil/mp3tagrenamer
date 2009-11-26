@@ -26,5 +26,8 @@
     <Setting Name="RegExpHistoryList" Type="System.Collections.ArrayList" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="LanguageUsed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-GB</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

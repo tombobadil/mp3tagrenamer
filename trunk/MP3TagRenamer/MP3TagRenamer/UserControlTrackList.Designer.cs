@@ -28,49 +28,41 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlTrackList));
-			this.m_UserControlFolderSelector = new MP3TagRenamer.UserControlFolderSelector();
-			this.m_DataGridViewTrackList = new System.Windows.Forms.DataGridView();
-			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.m_BindingSourceUltraID3 = new System.Windows.Forms.BindingSource(this.components);
-			this.m_FolderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-			this.buttonLoad = new System.Windows.Forms.Button();
-			this.panelTop = new System.Windows.Forms.Panel();
-			((System.ComponentModel.ISupportInitialize)(this.m_DataGridViewTrackList)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_BindingSourceUltraID3)).BeginInit();
-			this.panelTop.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// m_UserControlFolderSelector
-			// 
-			this.m_UserControlFolderSelector.ActualPath = "";
-			this.m_UserControlFolderSelector.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_UserControlFolderSelector.Location = new System.Drawing.Point(0, 0);
-			this.m_UserControlFolderSelector.Name = "m_UserControlFolderSelector";
-			this.m_UserControlFolderSelector.Paths = new string[] {
-        ""};
-			this.m_UserControlFolderSelector.Size = new System.Drawing.Size(652, 49);
-			this.m_UserControlFolderSelector.TabIndex = 7;
-			// 
-			// m_DataGridViewTrackList
-			// 
-			this.m_DataGridViewTrackList.AllowUserToAddRows = false;
-			this.m_DataGridViewTrackList.AllowUserToOrderColumns = true;
-			this.m_DataGridViewTrackList.AutoGenerateColumns = false;
-			this.m_DataGridViewTrackList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-			this.m_DataGridViewTrackList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn1,
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlTrackList));
+            this.m_DataGridViewTrackList = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.m_BindingSourceUltraID3 = new System.Windows.Forms.BindingSource(this.components);
+            this.m_FolderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.buttonLoad = new System.Windows.Forms.Button();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.m_UserControlFolderSelector = new MP3TagRenamer.UserControlFolderSelector();
+            ((System.ComponentModel.ISupportInitialize)(this.m_DataGridViewTrackList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_BindingSourceUltraID3)).BeginInit();
+            this.panelTop.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // m_DataGridViewTrackList
+            // 
+            this.m_DataGridViewTrackList.AccessibleDescription = null;
+            this.m_DataGridViewTrackList.AccessibleName = null;
+            this.m_DataGridViewTrackList.AllowUserToAddRows = false;
+            this.m_DataGridViewTrackList.AllowUserToOrderColumns = true;
+            resources.ApplyResources(this.m_DataGridViewTrackList, "m_DataGridViewTrackList");
+            this.m_DataGridViewTrackList.AutoGenerateColumns = false;
+            this.m_DataGridViewTrackList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.m_DataGridViewTrackList.BackgroundImage = null;
+            this.m_DataGridViewTrackList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -80,155 +72,151 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-			this.m_DataGridViewTrackList.DataSource = this.m_BindingSourceUltraID3;
-			this.m_DataGridViewTrackList.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.m_DataGridViewTrackList.Location = new System.Drawing.Point(0, 49);
-			this.m_DataGridViewTrackList.Name = "m_DataGridViewTrackList";
-			this.m_DataGridViewTrackList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.m_DataGridViewTrackList.Size = new System.Drawing.Size(704, 769);
-			this.m_DataGridViewTrackList.TabIndex = 2;
-			this.m_DataGridViewTrackList.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_MP3s_RowEnter);
-			this.m_DataGridViewTrackList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_MP3s_CellContentClick);
-			// 
-			// dataGridViewImageColumn1
-			// 
-			this.dataGridViewImageColumn1.HeaderText = "Play";
-			this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-			this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-			this.dataGridViewImageColumn1.Width = 33;
-			// 
-			// dataGridViewTextBoxColumn1
-			// 
-			this.dataGridViewTextBoxColumn1.DataPropertyName = "TrackNum";
-			this.dataGridViewTextBoxColumn1.HeaderText = "TrackNum";
-			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-			this.dataGridViewTextBoxColumn1.Width = 82;
-			// 
-			// dataGridViewTextBoxColumn2
-			// 
-			this.dataGridViewTextBoxColumn2.DataPropertyName = "Artist";
-			this.dataGridViewTextBoxColumn2.HeaderText = "Artist";
-			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-			this.dataGridViewTextBoxColumn2.Width = 55;
-			// 
-			// dataGridViewTextBoxColumn3
-			// 
-			this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.dataGridViewTextBoxColumn3.DataPropertyName = "Title";
-			this.dataGridViewTextBoxColumn3.HeaderText = "Title";
-			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-			this.dataGridViewTextBoxColumn3.Width = 52;
-			// 
-			// dataGridViewTextBoxColumn4
-			// 
-			this.dataGridViewTextBoxColumn4.DataPropertyName = "Genre";
-			this.dataGridViewTextBoxColumn4.HeaderText = "Genre";
-			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-			this.dataGridViewTextBoxColumn4.Width = 61;
-			// 
-			// dataGridViewTextBoxColumn5
-			// 
-			this.dataGridViewTextBoxColumn5.DataPropertyName = "Album";
-			this.dataGridViewTextBoxColumn5.HeaderText = "Album";
-			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-			this.dataGridViewTextBoxColumn5.Width = 61;
-			// 
-			// dataGridViewTextBoxColumn6
-			// 
-			this.dataGridViewTextBoxColumn6.DataPropertyName = "Year";
-			this.dataGridViewTextBoxColumn6.HeaderText = "Year";
-			this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-			this.dataGridViewTextBoxColumn6.Width = 54;
-			// 
-			// dataGridViewTextBoxColumn7
-			// 
-			this.dataGridViewTextBoxColumn7.DataPropertyName = "Size";
-			this.dataGridViewTextBoxColumn7.HeaderText = "Size";
-			this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-			this.dataGridViewTextBoxColumn7.ReadOnly = true;
-			this.dataGridViewTextBoxColumn7.Width = 52;
-			// 
-			// dataGridViewTextBoxColumn8
-			// 
-			this.dataGridViewTextBoxColumn8.DataPropertyName = "Comments";
-			this.dataGridViewTextBoxColumn8.HeaderText = "Comments";
-			this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-			this.dataGridViewTextBoxColumn8.Width = 81;
-			// 
-			// dataGridViewTextBoxColumn9
-			// 
-			this.dataGridViewTextBoxColumn9.DataPropertyName = "Duration";
-			this.dataGridViewTextBoxColumn9.HeaderText = "Duration";
-			this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-			this.dataGridViewTextBoxColumn9.ReadOnly = true;
-			this.dataGridViewTextBoxColumn9.Width = 72;
-			// 
-			// dataGridViewTextBoxColumn10
-			// 
-			this.dataGridViewTextBoxColumn10.DataPropertyName = "FileName";
-			this.dataGridViewTextBoxColumn10.HeaderText = "FileName";
-			this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-			this.dataGridViewTextBoxColumn10.ReadOnly = true;
-			this.dataGridViewTextBoxColumn10.Width = 76;
-			// 
-			// m_BindingSourceUltraID3
-			// 
-			this.m_BindingSourceUltraID3.DataSource = typeof(HundredMilesSoftware.UltraID3Lib.UltraID3);
-			this.m_BindingSourceUltraID3.DataError += new System.Windows.Forms.BindingManagerDataErrorEventHandler(this.BindingSourceUltraID3_DataError);
-			// 
-			// buttonLoad
-			// 
-			this.buttonLoad.Dock = System.Windows.Forms.DockStyle.Right;
-			this.buttonLoad.Location = new System.Drawing.Point(652, 0);
-			this.buttonLoad.Name = "buttonLoad";
-			this.buttonLoad.Size = new System.Drawing.Size(52, 49);
-			this.buttonLoad.TabIndex = 8;
-			this.buttonLoad.Text = "&>>>";
-			this.buttonLoad.UseVisualStyleBackColor = true;
-			this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
-			// 
-			// panelTop
-			// 
-			this.panelTop.Controls.Add(this.m_UserControlFolderSelector);
-			this.panelTop.Controls.Add(this.buttonLoad);
-			this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelTop.Location = new System.Drawing.Point(0, 0);
-			this.panelTop.Name = "panelTop";
-			this.panelTop.Size = new System.Drawing.Size(704, 49);
-			this.panelTop.TabIndex = 9;
-			// 
-			// UserControlTrackList
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.m_DataGridViewTrackList);
-			this.Controls.Add(this.panelTop);
-			this.Name = "UserControlTrackList";
-			this.Size = new System.Drawing.Size(704, 818);
-			((System.ComponentModel.ISupportInitialize)(this.m_DataGridViewTrackList)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.m_BindingSourceUltraID3)).EndInit();
-			this.panelTop.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewImageColumn1});
+            this.m_DataGridViewTrackList.DataSource = this.m_BindingSourceUltraID3;
+            this.m_DataGridViewTrackList.Font = null;
+            this.m_DataGridViewTrackList.Name = "m_DataGridViewTrackList";
+            this.m_DataGridViewTrackList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.m_DataGridViewTrackList.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_MP3s_RowEnter);
+            this.m_DataGridViewTrackList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_MP3s_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "TrackNum";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn1, "dataGridViewTextBoxColumn1");
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Artist";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn2, "dataGridViewTextBoxColumn2");
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Title";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn3, "dataGridViewTextBoxColumn3");
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Genre";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn4, "dataGridViewTextBoxColumn4");
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Album";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn5, "dataGridViewTextBoxColumn5");
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Year";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn6, "dataGridViewTextBoxColumn6");
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Size";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn7, "dataGridViewTextBoxColumn7");
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Comments";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn8, "dataGridViewTextBoxColumn8");
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Duration";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn9, "dataGridViewTextBoxColumn9");
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "FileName";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn10, "dataGridViewTextBoxColumn10");
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // m_BindingSourceUltraID3
+            // 
+            this.m_BindingSourceUltraID3.DataSource = typeof(HundredMilesSoftware.UltraID3Lib.UltraID3);
+            this.m_BindingSourceUltraID3.DataError += new System.Windows.Forms.BindingManagerDataErrorEventHandler(this.BindingSourceUltraID3_DataError);
+            // 
+            // m_FolderBrowserDialog
+            // 
+            resources.ApplyResources(this.m_FolderBrowserDialog, "m_FolderBrowserDialog");
+            // 
+            // buttonLoad
+            // 
+            this.buttonLoad.AccessibleDescription = null;
+            this.buttonLoad.AccessibleName = null;
+            resources.ApplyResources(this.buttonLoad, "buttonLoad");
+            this.buttonLoad.BackgroundImage = null;
+            this.buttonLoad.Font = null;
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
+            // 
+            // panelTop
+            // 
+            this.panelTop.AccessibleDescription = null;
+            this.panelTop.AccessibleName = null;
+            resources.ApplyResources(this.panelTop, "panelTop");
+            this.panelTop.BackgroundImage = null;
+            this.panelTop.Controls.Add(this.m_UserControlFolderSelector);
+            this.panelTop.Controls.Add(this.buttonLoad);
+            this.panelTop.Font = null;
+            this.panelTop.Name = "panelTop";
+            // 
+            // m_UserControlFolderSelector
+            // 
+            this.m_UserControlFolderSelector.AccessibleDescription = null;
+            this.m_UserControlFolderSelector.AccessibleName = null;
+            this.m_UserControlFolderSelector.ActualPath = "";
+            resources.ApplyResources(this.m_UserControlFolderSelector, "m_UserControlFolderSelector");
+            this.m_UserControlFolderSelector.BackgroundImage = null;
+            this.m_UserControlFolderSelector.Font = null;
+            this.m_UserControlFolderSelector.Name = "m_UserControlFolderSelector";
+            this.m_UserControlFolderSelector.Paths = new string[] {
+        ""};
+            // 
+            // UserControlTrackList
+            // 
+            this.AccessibleDescription = null;
+            this.AccessibleName = null;
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = null;
+            this.Controls.Add(this.m_DataGridViewTrackList);
+            this.Controls.Add(this.panelTop);
+            this.Font = null;
+            this.Name = "UserControlTrackList";
+            ((System.ComponentModel.ISupportInitialize)(this.m_DataGridViewTrackList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_BindingSourceUltraID3)).EndInit();
+            this.panelTop.ResumeLayout(false);
+            this.ResumeLayout(false);
 
 		}
 
 		#endregion
 
 		private UserControlFolderSelector m_UserControlFolderSelector;
-		private System.Windows.Forms.DataGridView m_DataGridViewTrackList;
-		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridView m_DataGridViewTrackList;
 		private System.Windows.Forms.BindingSource m_BindingSourceUltraID3;
 		private System.Windows.Forms.FolderBrowserDialog m_FolderBrowserDialog;
 
@@ -240,7 +228,18 @@
 		private System.Collections.Hashtable m_VisitedDirsPaths;
 		private string m_ActivePath;
 		private System.Windows.Forms.Button buttonLoad;
-		private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
 
 
 	}

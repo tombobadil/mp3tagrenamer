@@ -117,22 +117,1221 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="My_UltraID3BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>387, 17</value>
-  </metadata>
-  <metadata name="m_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>815, 17</value>
-  </metadata>
   <metadata name="My_HelpProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>680, 17</value>
   </metadata>
+  <data name="My_HelpProvider.HelpNamespace" xml:space="preserve">
+    <value>Help.htm</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="toolStripContainer1.BottomToolStripPanel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.BottomToolStripPanel.Name" xml:space="preserve">
+    <value>toolStripContainer1.BottomToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.BottomToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.BottomToolStripPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.BottomToolStripPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="toolStripContainer1.ContentPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="y_splitContainer_Main.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="y_splitContainer_Main.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="y_splitContainer_Main.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="my_label_ID3V2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_label_ID3V2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="my_label_ID3V2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="my_label_ID3V2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_label_ID3V2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="my_label_ID3V2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V2.Name" xml:space="preserve">
+    <value>my_label_ID3V2</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 215</value>
+  </data>
+  <data name="groupBox1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>397, 87</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>ID3 V2</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>y_splitContainer_Main.Panel1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="my_label_ID3V1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_label_ID3V1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="my_label_ID3V1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="my_label_ID3V1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_label_ID3V1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="my_label_ID3V1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V1.Name" xml:space="preserve">
+    <value>my_label_ID3V1</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;my_label_ID3V1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 215</value>
+  </data>
+  <data name="groupBox2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 87</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>ID3 V1</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>y_splitContainer_Main.Panel1</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="My_TabControl_BatchRen.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="m_UserControlBatchRenameFields.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_UserControlBatchRenameFields.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="m_UserControlBatchRenameFields.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_UserControlBatchRenameFields.Size" type="System.Drawing.Size, System.Drawing">
+    <value>825, 174</value>
+  </data>
+  <data name="m_UserControlBatchRenameFields.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlBatchRenameFields.Name" xml:space="preserve">
+    <value>m_UserControlBatchRenameFields</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlBatchRenameFields.Type" xml:space="preserve">
+    <value>MP3TagRenamer.UserControlBatchRenameFields, MP3TagRenamer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlBatchRenameFields.Parent" xml:space="preserve">
+    <value>m_TabPageBatch</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlBatchRenameFields.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_TabPageBatch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="m_TabPageBatch.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="m_TabPageBatch.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_TabPageBatch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>831, 180</value>
+  </data>
+  <data name="m_TabPageBatch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_TabPageBatch.Text" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageBatch.Name" xml:space="preserve">
+    <value>m_TabPageBatch</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageBatch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageBatch.Parent" xml:space="preserve">
+    <value>My_TabControl_BatchRen</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageBatch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GroupBox_ExtractFromFName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="m_ButtonSuggest.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="m_ButtonSuggest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_ButtonSuggest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 14</value>
+  </data>
+  <data name="m_ButtonSuggest.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_ButtonSuggest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="m_ButtonSuggest.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_ButtonSuggest.Text" xml:space="preserve">
+    <value>Suggest</value>
+  </data>
+  <metadata name="m_ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>815, 17</value>
+  </metadata>
+  <data name="m_ButtonSuggest.ToolTip" xml:space="preserve">
+    <value>Suggest tags that can be used</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonSuggest.Name" xml:space="preserve">
+    <value>m_ButtonSuggest</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonSuggest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonSuggest.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonSuggest.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_ButtonAddRemovePressets.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_ButtonAddRemovePressets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 43</value>
+  </data>
+  <data name="m_ButtonAddRemovePressets.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_ButtonAddRemovePressets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 23</value>
+  </data>
+  <data name="m_ButtonAddRemovePressets.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="m_ButtonAddRemovePressets.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="m_ButtonAddRemovePressets.ToolTip" xml:space="preserve">
+    <value>Add/Remove new definitions</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonAddRemovePressets.Name" xml:space="preserve">
+    <value>m_ButtonAddRemovePressets</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonAddRemovePressets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonAddRemovePressets.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonAddRemovePressets.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_LabelRealRexExpression.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelRealRexExpression.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 9pt</value>
+  </data>
+  <data name="m_LabelRealRexExpression.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_LabelRealRexExpression.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 46</value>
+  </data>
+  <data name="m_LabelRealRexExpression.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_LabelRealRexExpression.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 15</value>
+  </data>
+  <data name="m_LabelRealRexExpression.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="m_LabelRealRexExpression.Text" xml:space="preserve">
+    <value>RegExp:</value>
+  </data>
+  <data name="&gt;&gt;m_LabelRealRexExpression.Name" xml:space="preserve">
+    <value>m_LabelRealRexExpression</value>
+  </data>
+  <data name="&gt;&gt;m_LabelRealRexExpression.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_LabelRealRexExpression.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;m_LabelRealRexExpression.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ComboBox_ExtractTagsFromFNmane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 44</value>
+  </data>
+  <data name="ComboBox_ExtractTagsFromFNmane.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ComboBox_ExtractTagsFromFNmane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 21</value>
+  </data>
+  <data name="ComboBox_ExtractTagsFromFNmane.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ExtractTagsFromFNmane.Name" xml:space="preserve">
+    <value>ComboBox_ExtractTagsFromFNmane</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ExtractTagsFromFNmane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ExtractTagsFromFNmane.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_ExtractTagsFromFNmane.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Button_ExtractFRomFName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_ExtractFRomFName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 71</value>
+  </data>
+  <data name="Button_ExtractFRomFName.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Button_ExtractFRomFName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 25</value>
+  </data>
+  <data name="Button_ExtractFRomFName.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Button_ExtractFRomFName.Text" xml:space="preserve">
+    <value>Extract tags from selected files</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtractFRomFName.Name" xml:space="preserve">
+    <value>Button_ExtractFRomFName</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtractFRomFName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtractFRomFName.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtractFRomFName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Button_regexp_properties.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_regexp_properties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 43</value>
+  </data>
+  <data name="Button_regexp_properties.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Button_regexp_properties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 23</value>
+  </data>
+  <data name="Button_regexp_properties.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Button_regexp_properties.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Button_regexp_properties.ToolTip" xml:space="preserve">
+    <value>Edit predefind tags</value>
+  </data>
+  <data name="&gt;&gt;Button_regexp_properties.Name" xml:space="preserve">
+    <value>Button_regexp_properties</value>
+  </data>
+  <data name="&gt;&gt;Button_regexp_properties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_regexp_properties.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;Button_regexp_properties.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Button_ExtracFromFName_Test.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_ExtracFromFName_Test.Location" type="System.Drawing.Point, System.Drawing">
+    <value>359, 42</value>
+  </data>
+  <data name="Button_ExtracFromFName_Test.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Button_ExtracFromFName_Test.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="Button_ExtracFromFName_Test.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Button_ExtracFromFName_Test.Text" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Button_ExtracFromFName_Test.ToolTip" xml:space="preserve">
+    <value>Test expression before you run it</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtracFromFName_Test.Name" xml:space="preserve">
+    <value>Button_ExtracFromFName_Test</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtracFromFName_Test.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtracFromFName_Test.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;Button_ExtracFromFName_Test.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label_Regextpresult.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_Regextpresult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 9.75pt</value>
+  </data>
+  <data name="Label_Regextpresult.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label_Regextpresult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 68</value>
+  </data>
+  <data name="Label_Regextpresult.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_Regextpresult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="Label_Regextpresult.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Label_Regextpresult.Text" xml:space="preserve">
+    <value>---</value>
+  </data>
+  <data name="&gt;&gt;Label_Regextpresult.Name" xml:space="preserve">
+    <value>Label_Regextpresult</value>
+  </data>
+  <data name="&gt;&gt;Label_Regextpresult.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_Regextpresult.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;Label_Regextpresult.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TextBox_TestPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TextBox_TestPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="TextBox_TestPath.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextBox_TestPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>726, 20</value>
+  </data>
+  <data name="TextBox_TestPath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBox_TestPath.Name" xml:space="preserve">
+    <value>TextBox_TestPath</value>
+  </data>
+  <data name="&gt;&gt;TextBox_TestPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBox_TestPath.Parent" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;TextBox_TestPath.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="GroupBox_ExtractFromFName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 3</value>
+  </data>
+  <data name="GroupBox_ExtractFromFName.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GroupBox_ExtractFromFName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>819, 167</value>
+  </data>
+  <data name="GroupBox_ExtractFromFName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GroupBox_ExtractFromFName.Text" xml:space="preserve">
+    <value>Extract tags from file name</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_ExtractFromFName.Name" xml:space="preserve">
+    <value>GroupBox_ExtractFromFName</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_ExtractFromFName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_ExtractFromFName.Parent" xml:space="preserve">
+    <value>m_TabPageRenaming</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_ExtractFromFName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_TabPageRenaming.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="m_TabPageRenaming.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="m_TabPageRenaming.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_TabPageRenaming.Size" type="System.Drawing.Size, System.Drawing">
+    <value>831, 180</value>
+  </data>
+  <data name="m_TabPageRenaming.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_TabPageRenaming.Text" xml:space="preserve">
+    <value>Renaming</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageRenaming.Name" xml:space="preserve">
+    <value>m_TabPageRenaming</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageRenaming.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageRenaming.Parent" xml:space="preserve">
+    <value>My_TabControl_BatchRen</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageRenaming.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="my_textBox_removeText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="my_textBox_removeText.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_textBox_removeText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 20</value>
+  </data>
+  <data name="my_textBox_removeText.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_removeText.Name" xml:space="preserve">
+    <value>my_textBox_removeText</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_removeText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_removeText.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_removeText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="my_checkBox_UseRegExp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_checkBox_UseRegExp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="my_checkBox_UseRegExp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 86</value>
+  </data>
+  <data name="my_checkBox_UseRegExp.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_checkBox_UseRegExp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 17</value>
+  </data>
+  <data name="my_checkBox_UseRegExp.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="my_checkBox_UseRegExp.Text" xml:space="preserve">
+    <value>Use regular expresion</value>
+  </data>
+  <data name="&gt;&gt;my_checkBox_UseRegExp.Name" xml:space="preserve">
+    <value>my_checkBox_UseRegExp</value>
+  </data>
+  <data name="&gt;&gt;my_checkBox_UseRegExp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_checkBox_UseRegExp.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;my_checkBox_UseRegExp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="my_button_ClearComments.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="my_button_ClearComments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 141</value>
+  </data>
+  <data name="my_button_ClearComments.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_button_ClearComments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 23</value>
+  </data>
+  <data name="my_button_ClearComments.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="my_button_ClearComments.Text" xml:space="preserve">
+    <value>Clear comments</value>
+  </data>
+  <data name="&gt;&gt;my_button_ClearComments.Name" xml:space="preserve">
+    <value>my_button_ClearComments</value>
+  </data>
+  <data name="&gt;&gt;my_button_ClearComments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_button_ClearComments.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;my_button_ClearComments.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="my_button_removeText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="my_button_removeText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 6</value>
+  </data>
+  <data name="my_button_removeText.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_button_removeText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 23</value>
+  </data>
+  <data name="my_button_removeText.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="my_button_removeText.Text" xml:space="preserve">
+    <value>Remove text</value>
+  </data>
+  <data name="&gt;&gt;my_button_removeText.Name" xml:space="preserve">
+    <value>my_button_removeText</value>
+  </data>
+  <data name="&gt;&gt;my_button_removeText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_button_removeText.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;my_button_removeText.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="my_button_GetTrackNrFronTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="my_button_GetTrackNrFronTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 141</value>
+  </data>
+  <data name="my_button_GetTrackNrFronTitle.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_button_GetTrackNrFronTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 23</value>
+  </data>
+  <data name="my_button_GetTrackNrFronTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="my_button_GetTrackNrFronTitle.Text" xml:space="preserve">
+    <value>Get track# from title</value>
+  </data>
+  <data name="&gt;&gt;my_button_GetTrackNrFronTitle.Name" xml:space="preserve">
+    <value>my_button_GetTrackNrFronTitle</value>
+  </data>
+  <data name="&gt;&gt;my_button_GetTrackNrFronTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_button_GetTrackNrFronTitle.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;my_button_GetTrackNrFronTitle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="my_textBox_fixTitle.HelpKeyword" xml:space="preserve">
+    <value>remove_text_from_title</value>
+  </data>
+  <data name="my_textBox_fixTitle.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>Find</value>
+  </data>
+  <data name="my_textBox_fixTitle.HelpString" xml:space="preserve">
+    <value>Remove text from title that matchs this string or this regular expretion if checkbox for regullar expretion is checked </value>
+  </data>
+  <data name="my_textBox_fixTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 60</value>
+  </data>
+  <data name="my_textBox_fixTitle.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_textBox_fixTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 20</value>
+  </data>
+  <data name="my_textBox_fixTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_fixTitle.Name" xml:space="preserve">
+    <value>my_textBox_fixTitle</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_fixTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_fixTitle.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;my_textBox_fixTitle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 106</value>
+  </data>
+  <data name="label2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Write regular expretion that removes things from tiltels</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="my_button_fixTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="my_button_fixTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 57</value>
+  </data>
+  <data name="my_button_fixTitle.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="my_button_fixTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 23</value>
+  </data>
+  <data name="my_button_fixTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="my_button_fixTitle.Text" xml:space="preserve">
+    <value>Remove extra form title</value>
+  </data>
+  <data name="&gt;&gt;my_button_fixTitle.Name" xml:space="preserve">
+    <value>my_button_fixTitle</value>
+  </data>
+  <data name="&gt;&gt;my_button_fixTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_button_fixTitle.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;my_button_fixTitle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 29</value>
+  </data>
+  <data name="label1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>write text that you want to remove from all tags ie: www.blabla.com</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="m_TabPageCleaning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="m_TabPageCleaning.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="m_TabPageCleaning.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_TabPageCleaning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>831, 180</value>
+  </data>
+  <data name="m_TabPageCleaning.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_TabPageCleaning.Text" xml:space="preserve">
+    <value>Cleaning</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCleaning.Name" xml:space="preserve">
+    <value>m_TabPageCleaning</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCleaning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCleaning.Parent" xml:space="preserve">
+    <value>My_TabControl_BatchRen</value>
+  </data>
+  <data name="&gt;&gt;m_TabPageCleaning.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="My_TabControl_BatchRen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 3</value>
+  </data>
+  <data name="My_TabControl_BatchRen.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="My_TabControl_BatchRen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>839, 206</value>
+  </data>
+  <data name="My_TabControl_BatchRen.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;My_TabControl_BatchRen.Name" xml:space="preserve">
+    <value>My_TabControl_BatchRen</value>
+  </data>
+  <data name="&gt;&gt;My_TabControl_BatchRen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;My_TabControl_BatchRen.Parent" xml:space="preserve">
+    <value>y_splitContainer_Main.Panel1</value>
+  </data>
+  <data name="&gt;&gt;My_TabControl_BatchRen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="y_splitContainer_Main.Panel1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel1.Name" xml:space="preserve">
+    <value>y_splitContainer_Main.Panel1</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel1.Parent" xml:space="preserve">
+    <value>y_splitContainer_Main</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_UserControlTrackList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="m_UserControlTrackList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="m_UserControlTrackList.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_UserControlTrackList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 367</value>
+  </data>
+  <data name="m_UserControlTrackList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlTrackList.Name" xml:space="preserve">
+    <value>m_UserControlTrackList</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlTrackList.Type" xml:space="preserve">
+    <value>MP3TagRenamer.UserControlTrackList, MP3TagRenamer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlTrackList.Parent" xml:space="preserve">
+    <value>y_splitContainer_Main.Panel2</value>
+  </data>
+  <data name="&gt;&gt;m_UserControlTrackList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="y_splitContainer_Main.Panel2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel2.Name" xml:space="preserve">
+    <value>y_splitContainer_Main.Panel2</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel2.Parent" xml:space="preserve">
+    <value>y_splitContainer_Main</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="y_splitContainer_Main.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="y_splitContainer_Main.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 686</value>
+  </data>
+  <data name="y_splitContainer_Main.SplitterDistance" type="System.Int32, mscorlib">
+    <value>310</value>
+  </data>
+  <data name="y_splitContainer_Main.SplitterWidth" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="y_splitContainer_Main.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Name" xml:space="preserve">
+    <value>y_splitContainer_Main</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.Parent" xml:space="preserve">
+    <value>toolStripContainer1.ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;y_splitContainer_Main.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStripContainer1.ContentPanel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toolStripContainer1.ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 686</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.ContentPanel.Name" xml:space="preserve">
+    <value>toolStripContainer1.ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.ContentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContentPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.ContentPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.ContentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStripContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="toolStripContainer1.LeftToolStripPanel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.LeftToolStripPanel.Name" xml:space="preserve">
+    <value>toolStripContainer1.LeftToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.LeftToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.LeftToolStripPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.LeftToolStripPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="toolStripContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStripContainer1.RightToolStripPanel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.RightToolStripPanel.Name" xml:space="preserve">
+    <value>toolStripContainer1.RightToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.RightToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.RightToolStripPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.RightToolStripPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="toolStripContainer1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toolStripContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 710</value>
+  </data>
+  <data name="toolStripContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
   <metadata name="My_MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>571, 17</value>
+    <value>0, 0</value>
+  </metadata>
+  <data name="My_MenuStrip.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="batchToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+B</value>
+  </data>
+  <data name="batchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 22</value>
+  </data>
+  <data name="batchToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Batch</value>
+  </data>
+  <data name="renamingToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+R</value>
+  </data>
+  <data name="renamingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 22</value>
+  </data>
+  <data name="renamingToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Renaming</value>
+  </data>
+  <data name="finToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+D</value>
+  </data>
+  <data name="finToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 22</value>
+  </data>
+  <data name="finToolStripMenuItem.Text" xml:space="preserve">
+    <value>Find &amp;Duplicates</value>
+  </data>
+  <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="viewToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;English</value>
+  </data>
+  <data name="englishToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Program restarts automaticly after langage change</value>
+  </data>
+  <data name="svenskaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="svenskaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Svenska</value>
+  </data>
+  <data name="svenskaToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Program restarts automaticly after langage change</value>
+  </data>
+  <data name="bosniskaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="bosniskaToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Bosanski</value>
+  </data>
+  <data name="bosniskaToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Program restarts automaticly after langage change</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Language</value>
+  </data>
+  <data name="languageToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Program restarts automaticly after langage change</value>
+  </data>
+  <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Options</value>
+  </data>
+  <data name="my_helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="my_helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="my_aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 22</value>
+  </data>
+  <data name="my_aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="My_MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="My_MenuStrip.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="My_MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 24</value>
+  </data>
+  <data name="My_MenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="My_MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;My_MenuStrip.Name" xml:space="preserve">
+    <value>My_MenuStrip</value>
+  </data>
+  <data name="&gt;&gt;My_MenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;My_MenuStrip.Parent" xml:space="preserve">
+    <value>toolStripContainer1.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;My_MenuStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStripContainer1.TopToolStripPanel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.TopToolStripPanel.Name" xml:space="preserve">
+    <value>toolStripContainer1.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.TopToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.TopToolStripPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.TopToolStripPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.Name" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="My_UltraID3BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>387, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>55</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>866, 710</value>
+  </data>
+  <data name="$this.HelpKeyword" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="$this.HelpString" xml:space="preserve">
+    <value>Main</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAEAIABoBAAAJgAAACMgAAABACAAqBIAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAAAAA
@@ -236,5 +1435,110 @@
         ///gAAAA/////+AAAAD/////4AAAAP/////gAAAA/////+AAAAD/////4AAAAP/////gAAAA/////+AA
         AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MP3 Tag renamer</value>
+  </data>
+  <data name="&gt;&gt;viewToolStripMenuItem.Name" xml:space="preserve">
+    <value>viewToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;viewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;batchToolStripMenuItem.Name" xml:space="preserve">
+    <value>batchToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;batchToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;renamingToolStripMenuItem.Name" xml:space="preserve">
+    <value>renamingToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;renamingToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finToolStripMenuItem.Name" xml:space="preserve">
+    <value>finToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;finToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;optionsToolStripMenuItem.Name" xml:space="preserve">
+    <value>optionsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;optionsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;svenskaToolStripMenuItem.Name" xml:space="preserve">
+    <value>svenskaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;svenskaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bosniskaToolStripMenuItem.Name" xml:space="preserve">
+    <value>bosniskaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;bosniskaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
+    <value>helpToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;helpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_helpToolStripMenuItem.Name" xml:space="preserve">
+    <value>my_helpToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;my_helpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;my_aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>my_aboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;my_aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;My_UltraID3BindingSource.Name" xml:space="preserve">
+    <value>My_UltraID3BindingSource</value>
+  </data>
+  <data name="&gt;&gt;My_UltraID3BindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;My_HelpProvider.Name" xml:space="preserve">
+    <value>My_HelpProvider</value>
+  </data>
+  <data name="&gt;&gt;My_HelpProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ToolTip.Name" xml:space="preserve">
+    <value>m_ToolTip</value>
+  </data>
+  <data name="&gt;&gt;m_ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

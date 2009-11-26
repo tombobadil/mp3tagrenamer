@@ -14,7 +14,19 @@ namespace MP3TagRenamer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault( false );
-            Application.Run( new MainForm() );
+            RestartFormIfLangageChaned();
+        }
+
+        private static void RestartFormIfLangageChaned()
+        {
+            try
+            {
+                Application.Run(new MainForm());
+            }
+            catch (ApplicationException)
+            {
+                RestartFormIfLangageChaned();
+            }
         }
     }
 }
