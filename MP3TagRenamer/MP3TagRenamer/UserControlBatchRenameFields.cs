@@ -13,7 +13,7 @@ namespace MP3TagRenamer
 	{
 		public event EventHandler UpdateClicked;
 
-		public bool UpdateAlbum { get { return m_CheckBoxArtist.Checked; } }
+		public bool UpdateAlbum { get { return m_CheckBoxAlbum.Checked; } }
 		public bool UpdateArtist { get { return m_CheckBoxArtist.Checked; } }
 		public bool UpdateGanre { get { return m_CheckBoxGanre.Checked; } }
 		public bool UpdateYear { get { return m_CheckBoxYear.Checked; } }
