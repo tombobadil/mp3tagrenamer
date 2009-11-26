@@ -117,4 +117,274 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_ButtonUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 93</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxAlbum.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxArtist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxYear.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="m_CheckBoxAlbum.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxArtist.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="m_ButtonUpdate.Text" xml:space="preserve">
+    <value>&amp;Update</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_CheckBoxYear.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Name" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="m_CheckBoxAlbum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_ComboBoxGanre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 21</value>
+  </data>
+  <data name="m_CheckBoxAlbum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="m_CheckBoxGanre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="m_TextBoxYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 84</value>
+  </data>
+  <data name="m_CheckBoxYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 88</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxArtist.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonUpdate.Name" xml:space="preserve">
+    <value>m_ButtonUpdate</value>
+  </data>
+  <data name="m_ComboBoxGanre.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="m_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="m_CheckBoxGanre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 63</value>
+  </data>
+  <data name="m_TextBoxAlbum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 35</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxArtist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxYear.Name" xml:space="preserve">
+    <value>m_CheckBoxYear</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="m_CheckBoxAlbum.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="m_TextBoxArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 20</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxAlbum.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="m_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxGanre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_CheckBoxYear.Text" xml:space="preserve">
+    <value>&amp;Year  </value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxYear.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="m_ComboBoxGanre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 59</value>
+  </data>
+  <data name="m_CheckBoxArtist.Text" xml:space="preserve">
+    <value>&amp;Artist  </value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_CheckBoxGanre.Text" xml:space="preserve">
+    <value>&amp;Ganre</value>
+  </data>
+  <data name="m_CheckBoxArtist.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonUpdate.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxArtist.Name" xml:space="preserve">
+    <value>m_CheckBoxArtist</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxYear.Name" xml:space="preserve">
+    <value>m_TextBoxYear</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxGanre.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="m_CheckBoxAlbum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 38</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxGanre.Name" xml:space="preserve">
+    <value>m_CheckBoxGanre</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UserControlBatchRenameFields</value>
+  </data>
+  <data name="m_CheckBoxYear.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="m_TextBoxArtist.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="m_CheckBoxYear.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxArtist.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxGanre.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="m_CheckBoxArtist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="m_CheckBoxArtist.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="m_CheckBoxAlbum.Text" xml:space="preserve">
+    <value>Al&amp;bum</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxAlbum.Name" xml:space="preserve">
+    <value>m_CheckBoxAlbum</value>
+  </data>
+  <data name="m_CheckBoxGanre.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>626, 124</value>
+  </data>
+  <data name="m_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>626, 124</value>
+  </data>
+  <data name="m_TextBoxYear.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_TextBoxYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 20</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxAlbum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxArtist.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxYear.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="m_CheckBoxYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="m_TextBoxArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 11</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxAlbum.Name" xml:space="preserve">
+    <value>m_TextBoxAlbum</value>
+  </data>
+  <data name="m_ButtonUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxGanre.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_CheckBoxArtist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 13</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxArtist.Name" xml:space="preserve">
+    <value>m_TextBoxArtist</value>
+  </data>
+  <data name="m_TextBoxAlbum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 20</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxGanre.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TextBoxAlbum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="m_CheckBoxArtist.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_ButtonUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 13</value>
+  </data>
+  <data name="&gt;&gt;m_ComboBoxGanre.Name" xml:space="preserve">
+    <value>m_ComboBoxGanre</value>
+  </data>
+  <data name="m_TextBoxAlbum.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxAlbum.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxAlbum.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="m_CheckBoxGanre.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxYear.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="m_CheckBoxGanre.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_CheckBoxGanre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_ButtonUpdate.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
