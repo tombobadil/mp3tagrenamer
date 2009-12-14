@@ -187,8 +187,8 @@ namespace MP3TagRenamer
 		/// <param name="e"></param>
 		private void ClearCommentsAsync()
 		{
-			if (m_BindingSourceUltraID3.IsSynchronized)
-			{
+            lock(m_BindingSourceUltraID3.SyncRoot)
+            {
 				foreach (UltraID3 uid3 in m_BindingSourceUltraID3)
 				{
 					try
@@ -255,9 +255,19 @@ namespace MP3TagRenamer
 
 					if (updateGanre)
 					{
-						uid3.Genre = ganreText;
-						uid3.ID3v1Tag.SetGenre(ganreText);
-						uid3.ID3v2Tag.Genre = ganreText;
+						 try
+                        {
+                             uid3.Genre = ganreText;
+                        }catch { }
+                        try
+                        {
+                            uid3.ID3v1Tag.SetGenre(ganreText);
+                        }catch{}
+						 try
+                        {
+                             uid3.ID3v2Tag.Genre = ganreText;
+                        }
+                         catch { }
 					}
 
 					if (upateYear)
