@@ -15,26 +15,26 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_CC148F5760A445F51210E05105DE1559"
-        "OwnerKey" = "8:_F55545E7283E4342A97B80B6491BD1BC"
+        "MsmKey" = "8:_125B57733EC976ADEE3A09BC7BB649E2"
+        "OwnerKey" = "8:_987CCFE693894F7FA3AB747D4FC516D2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F55545E7283E4342A97B80B6491BD1BC"
+        "MsmKey" = "8:_987CCFE693894F7FA3AB747D4FC516D2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F55545E7283E4342A97B80B6491BD1BC"
+        "OwnerKey" = "8:_987CCFE693894F7FA3AB747D4FC516D2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CC148F5760A445F51210E05105DE1559"
+        "OwnerKey" = "8:_125B57733EC976ADEE3A09BC7BB649E2"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -132,14 +132,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CC148F5760A445F51210E05105DE1559"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_125B57733EC976ADEE3A09BC7BB649E2"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:UltraID3Lib, Version=0.9.5.10, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:UltraID3Lib, Version=0.9.6.6, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_CC148F5760A445F51210E05105DE1559"
+                    "_125B57733EC976ADEE3A09BC7BB649E2"
                     {
                     "Name" = "8:UltraID3Lib.dll"
                     "Attributes" = "3:512"
@@ -171,7 +171,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_662F363C04074838A69C11109051AA4F"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -220,27 +220,27 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MP3 Renamer"
         "ProductCode" = "8:{75C43A91-EC51-4CC8-ADB6-F3CDAC494DB5}"
-        "PackageCode" = "8:{D2F47D7D-ED9D-4B12-AF67-36582E44860B}"
+        "PackageCode" = "8:{AE47F958-C470-4A53-8C78-CC7B86645C91}"
         "UpgradeCode" = "8:{8A2987B1-BEDF-4F59-9E79-D6EF8568003B}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Mithat Hackovic"
+        "Manufacturer" = "8:hackovic.com"
         "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
+        "ARPHELPLINK" = "8:http://sites.google.com/site/mp3tageditor/"
         "Title" = "8:Setup MP3 Tag Editor"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Mithat Hackovic"
         "Keywords" = "8:mp3 tag edit"
-        "ARPCOMMENTS" = "8:"
-        "ARPURLINFOABOUT" = "8:"
+        "ARPCOMMENTS" = "8:Change Mp3 tag information on your Mp3 file. Find duplicate Mp3s"
+        "ARPURLINFOABOUT" = "8:http://sites.google.com/site/mp3tageditor/"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -339,6 +339,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_75C973CE3A5F4FBA9A918DF1C350263B"
+            {
+            "Name" = "8:MP3 Tag Renamer"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_987CCFE693894F7FA3AB747D4FC516D2"
+            "Folder" = "8:_C85A38A3065C4103AED509E2D1C8B29A"
+            "WorkingFolder" = "8:_662F363C04074838A69C11109051AA4F"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_921C1EB4B44C4CD78D95B74035825144"
             {
             "Name" = "8:MP3 Teg Editor"
@@ -347,7 +361,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_F55545E7283E4342A97B80B6491BD1BC"
+            "Target" = "8:_987CCFE693894F7FA3AB747D4FC516D2"
             "Folder" = "8:_DFE170BA59A5437195BD28B540129BFA"
             "WorkingFolder" = "8:_662F363C04074838A69C11109051AA4F"
             "Icon" = "8:"
@@ -752,7 +766,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_12FA6431B2544525BA22D6514E0EED2C"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_197AA43B28D84DE190D0A9199D2CAEF2"
             {
             "SourcePath" = "8:"
             "TargetName" = "8:"
@@ -772,63 +786,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
-            "OutputGroupCanonicalName" = "8:Documentation"
-            "OutputProjectGuid" = "8:{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_6D3FC347C75D457A97839FFCD65C28EC"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_662F363C04074838A69C11109051AA4F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
-            "OutputGroupCanonicalName" = "8:ContentFiles"
-            "OutputProjectGuid" = "8:{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B5A0D27963174DCC95EE348E8F6ED7FD"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_662F363C04074838A69C11109051AA4F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputConfiguration" = "8:Release|x64"
             "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
             "OutputProjectGuid" = "8:{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
             "ShowKeyOutput" = "11:TRUE"
@@ -836,7 +794,7 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_E79F29F7569D437695BC238526CB3180"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3C473B607400402D8F33E0439E3D1C59"
             {
             "SourcePath" = "8:"
             "TargetName" = "8:"
@@ -856,7 +814,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputConfiguration" = "8:Release|x64"
             "OutputGroupCanonicalName" = "8:XmlSerializer"
             "OutputProjectGuid" = "8:{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
             "ShowKeyOutput" = "11:TRUE"
@@ -864,9 +822,9 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F55545E7283E4342A97B80B6491BD1BC"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_474757A6E2494386935D00DA841639B3"
             {
-            "SourcePath" = "8:..\\MP3TagRenamer\\obj\\Release\\MP3TagRenamer.exe"
+            "SourcePath" = "8:"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_662F363C04074838A69C11109051AA4F"
@@ -884,7 +842,63 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputConfiguration" = "8:Release|x64"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
+            "OutputProjectGuid" = "8:{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8CA70F46F0E245AEB875FD959072C238"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_662F363C04074838A69C11109051AA4F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x64"
+            "OutputGroupCanonicalName" = "8:Documentation"
+            "OutputProjectGuid" = "8:{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_987CCFE693894F7FA3AB747D4FC516D2"
+            {
+            "SourcePath" = "8:..\\MP3TagRenamer\\obj\\x64\\Release\\MP3TagRenamer.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_662F363C04074838A69C11109051AA4F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|x64"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{4FB80821-82E4-42FD-84AA-B8AA1A97838B}"
             "ShowKeyOutput" = "11:TRUE"
