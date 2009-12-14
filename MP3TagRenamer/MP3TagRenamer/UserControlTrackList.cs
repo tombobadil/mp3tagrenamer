@@ -32,8 +32,24 @@ namespace MP3TagRenamer
 		public string ID3V1Text { get; set; }
 		public string ID3V2Text { get; set; }
 		public string SelectedTracksPath { get; set; }
-		public string ActualPath { get { return m_UserControlFolderSelector.ActualPath; } }
-		public string[] VisitedPaths { get { return m_UserControlFolderSelector.Paths; } }
+        
+        public string ActualPath
+        {
+            get
+            {
+                if (m_UserControlFolderSelector == null) return "";
+                return m_UserControlFolderSelector.ActualPath;
+            }
+        }
+
+        public string[] VisitedPaths
+        {
+            get
+            {
+                if (m_UserControlFolderSelector == null) return new string[] { "" };
+                return m_UserControlFolderSelector.Paths;
+            }
+        }
 
 
 		public void FixTitle(string title)
