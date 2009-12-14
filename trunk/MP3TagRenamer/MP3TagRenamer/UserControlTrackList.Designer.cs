@@ -172,6 +172,17 @@
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
+            // m_UserControlFolderSelector
+            // 
+            this.m_UserControlFolderSelector.AccessibleDescription = null;
+            this.m_UserControlFolderSelector.AccessibleName = null;
+            this.m_UserControlFolderSelector.ActualPath = "";
+            resources.ApplyResources(this.m_UserControlFolderSelector, "m_UserControlFolderSelector");
+            this.m_UserControlFolderSelector.BackgroundImage = null;
+            this.m_UserControlFolderSelector.Font = null;
+            this.m_UserControlFolderSelector.Name = "m_UserControlFolderSelector";
+            this.m_UserControlFolderSelector.Paths = new string[] {""};
+            // 
             // panelTop
             // 
             this.panelTop.AccessibleDescription = null;
@@ -182,18 +193,6 @@
             this.panelTop.Controls.Add(this.buttonLoad);
             this.panelTop.Font = null;
             this.panelTop.Name = "panelTop";
-            // 
-            // m_UserControlFolderSelector
-            // 
-            this.m_UserControlFolderSelector.AccessibleDescription = null;
-            this.m_UserControlFolderSelector.AccessibleName = null;
-            this.m_UserControlFolderSelector.ActualPath = "";
-            resources.ApplyResources(this.m_UserControlFolderSelector, "m_UserControlFolderSelector");
-            this.m_UserControlFolderSelector.BackgroundImage = null;
-            this.m_UserControlFolderSelector.Font = null;
-            this.m_UserControlFolderSelector.Name = "m_UserControlFolderSelector";
-            this.m_UserControlFolderSelector.Paths = new string[] {
-        ""};
             // 
             // UserControlTrackList
             // 
@@ -215,7 +214,7 @@
 
 		#endregion
 
-		private UserControlFolderSelector m_UserControlFolderSelector;
+		private MP3TagRenamer.UserControlFolderSelector m_UserControlFolderSelector;
         private System.Windows.Forms.DataGridView m_DataGridViewTrackList;
 		private System.Windows.Forms.BindingSource m_BindingSourceUltraID3;
 		private System.Windows.Forms.FolderBrowserDialog m_FolderBrowserDialog;
