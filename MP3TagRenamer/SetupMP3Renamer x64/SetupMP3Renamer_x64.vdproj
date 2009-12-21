@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:SetupMP3Renamer"
+"ProjectName" = "8:SetupMP3Renamer x64"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_125B57733EC976ADEE3A09BC7BB649E2"
+        "MsmKey" = "8:_1BDA6D61B51387D6B6882B69E823D3BF"
         "OwnerKey" = "8:_987CCFE693894F7FA3AB747D4FC516D2"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_125B57733EC976ADEE3A09BC7BB649E2"
+        "OwnerKey" = "8:_1BDA6D61B51387D6B6882B69E823D3BF"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -132,14 +132,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_125B57733EC976ADEE3A09BC7BB649E2"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1BDA6D61B51387D6B6882B69E823D3BF"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:UltraID3Lib, Version=0.9.6.6, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_125B57733EC976ADEE3A09BC7BB649E2"
+                    "_1BDA6D61B51387D6B6882B69E823D3BF"
                     {
                     "Name" = "8:UltraID3Lib.dll"
                     "Attributes" = "3:512"
