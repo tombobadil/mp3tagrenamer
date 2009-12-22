@@ -141,7 +141,7 @@ namespace MP3TagRenamer
 
 		private void buttonTest_Click(object sender, EventArgs e)
 		{
-			labelTest.Text = UserControlTrackList.ExtracFromFName_TEST(textBoxResult.Text, Path);
+			labelTest.Text = UserControlTrackList.ExtracFromFNameTest(textBoxResult.Text, Path);
 		}
 
 

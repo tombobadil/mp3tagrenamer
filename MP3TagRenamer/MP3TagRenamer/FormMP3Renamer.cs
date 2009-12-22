@@ -7,7 +7,7 @@ namespace MP3TagRenamer
 {
     public partial class MainForm : Form
     {
-        private UserControlCompareDuplicates my_compare_duplicates;
+        private UserControlCompareDuplicates m_CompareDuplicates;
             
         public MainForm()
         {
@@ -16,15 +16,15 @@ namespace MP3TagRenamer
             InitializeLanguageMenu();
 			SetRealRegExpLabel();
 			ResetRegExpComboBox();
-			m_UserControlBatchRenameFields.UpdateClicked += new EventHandler(Button_UpdateBatch_Click);
-			m_UserControlTrackList.BatchFieldsUpdated += new UserControlTrackList.BatchFieldsInfoHandler(UserControlTrackList_BatchFieldsUpdated);
-			m_UserControlTrackList.TrackListRowEnter += new EventHandler(UserControlTrackList_TrackListRowEnter);
+			m_UserControlBatchRenameFields.UpdateClicked += Button_UpdateBatch_Click;
+			m_UserControlTrackList.BatchFieldsUpdated += UserControlTrackList_BatchFieldsUpdated;
+			m_UserControlTrackList.TrackListRowEnter += UserControlTrackList_TrackListRowEnter;
         }
-        private void InitializeCulture()
+        private static void InitializeCulture()
         {
             try
             {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed);               
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.LanguageUsed);               
             }
             catch { }
         }
@@ -33,11 +33,11 @@ namespace MP3TagRenamer
         {
             try
             {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed);
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(Properties.Settings.Default.LanguageUsed);
                 englishToolStripMenuItem.Checked = false;
                 svenskaToolStripMenuItem.Checked = false;
                 bosniskaToolStripMenuItem.Checked = false;
-                switch (global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed)
+                switch (Properties.Settings.Default.LanguageUsed)
                 {
                     case "bs-Latn-BA":
                         bosniskaToolStripMenuItem.Checked = true;
@@ -56,7 +56,7 @@ namespace MP3TagRenamer
 		private void ResetRegExpComboBox()
 		{
 			string[] regExps = 
-				new string[]{	
+				new[]{	
 					"#artist# - #tracknr# - #album# - #year# - #title#",
 					"#artist# - #album# - #year# - #tracknr# - #title#",
 					"#artist# - #tracknr# - #album# - #title#",
@@ -64,18 +64,18 @@ namespace MP3TagRenamer
 					"#artist# - #title#",
 					"#title#"};
 			this.ComboBox_ExtractTagsFromFNmane.Items.AddRange(regExps);
-			if (global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList != null
-				&& global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList.Count > 0) {
-					this.ComboBox_ExtractTagsFromFNmane.Items.Clear();
-					this.ComboBox_ExtractTagsFromFNmane.Items.AddRange(global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList.ToArray());
+			if (Properties.Settings.Default.RegExpHistoryList != null
+				&& Properties.Settings.Default.RegExpHistoryList.Count > 0) {
+					ComboBox_ExtractTagsFromFNmane.Items.Clear();
+					ComboBox_ExtractTagsFromFNmane.Items.AddRange(Properties.Settings.Default.RegExpHistoryList.ToArray());
 			}
 		}
 		
 
 		void UserControlTrackList_TrackListRowEnter(object sender, EventArgs e)
 		{
-			this.my_label_ID3V1.Text = m_UserControlTrackList.ID3V1Text;
-			this.my_label_ID3V2.Text = m_UserControlTrackList.ID3V2Text;
+			my_label_ID3V1.Text = m_UserControlTrackList.ID3V1Text;
+			my_label_ID3V2.Text = m_UserControlTrackList.ID3V2Text;
 			TextBox_TestPath.Text = m_UserControlTrackList.SelectedTracksPath;
 		}
 
@@ -131,20 +131,20 @@ namespace MP3TagRenamer
         {
             try
             {
-                global::MP3TagRenamer.Properties.Settings.Default.LastUsedPath = m_UserControlTrackList.ActualPath;
-                if (global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths == null)
-                    global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths = new System.Collections.Specialized.StringCollection();
-				global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths.AddRange(m_UserControlTrackList.VisitedPaths);
+                Properties.Settings.Default.LastUsedPath = m_UserControlTrackList.ActualPath;
+                if (Properties.Settings.Default.VisitedPaths == null)
+                    Properties.Settings.Default.VisitedPaths = new System.Collections.Specialized.StringCollection();
+				Properties.Settings.Default.VisitedPaths.AddRange(m_UserControlTrackList.VisitedPaths);
 
 				ArrayList regExps = new ArrayList();
 				//for (int i = 0; i < ComboBox_ExtractTagsFromFNmane.Items.Count; i++)
 				//{
 					regExps.AddRange(ComboBox_ExtractTagsFromFNmane.Items);
 				//}
-				global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList = new ArrayList();
-				global::MP3TagRenamer.Properties.Settings.Default.RegExpHistoryList.AddRange(regExps);
+				Properties.Settings.Default.RegExpHistoryList = new ArrayList();
+				Properties.Settings.Default.RegExpHistoryList.AddRange(regExps);
 
-                global::MP3TagRenamer.Properties.Settings.Default.Save();
+                Properties.Settings.Default.Save();
             }
             catch 
             {
@@ -162,7 +162,7 @@ namespace MP3TagRenamer
 		private void Button_ExtracFromFNameTEST_Click(object sender, EventArgs e)
 		{
 			SetRealRegExpLabel();
-			Label_Regextpresult.Text = UserControlTrackList.ExtracFromFName_TEST(ComboBox_ExtractTagsFromFNmane.Text, m_UserControlTrackList.SelectedTracksPath);
+			Label_Regextpresult.Text = UserControlTrackList.ExtracFromFNameTest(ComboBox_ExtractTagsFromFNmane.Text, m_UserControlTrackList.SelectedTracksPath);
 		}
 
         private void Button_ExtractFRomFName_Click( object sender , EventArgs e )
@@ -179,25 +179,25 @@ namespace MP3TagRenamer
         {
 
             this.toolStripContainer1.ContentPanel.Controls.Clear();
-            if (my_compare_duplicates == null)
-                my_compare_duplicates = new UserControlCompareDuplicates();
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.my_compare_duplicates);
-            my_compare_duplicates.Dock = DockStyle.Fill;
+            if (m_CompareDuplicates == null)
+                m_CompareDuplicates = new UserControlCompareDuplicates();
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.m_CompareDuplicates);
+            m_CompareDuplicates.Dock = DockStyle.Fill;
         }
 
         private void ToolStripMenuItem_RenamingClick(object sender, EventArgs e)
         {
-            this.toolStripContainer1.ContentPanel.Controls.Clear();
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.y_splitContainer_Main);
-            this.My_TabControl_BatchRen.SelectedTab = m_TabPageRenaming;
+            toolStripContainer1.ContentPanel.Controls.Clear();
+            toolStripContainer1.ContentPanel.Controls.Add(y_splitContainer_Main);
+            My_TabControl_BatchRen.SelectedTab = m_TabPageRenaming;
 
 
         }
         private void BatchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.toolStripContainer1.ContentPanel.Controls.Clear();
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.y_splitContainer_Main);
-            this.My_TabControl_BatchRen.SelectedTab = m_TabPageBatch;
+            toolStripContainer1.ContentPanel.Controls.Clear();
+            toolStripContainer1.ContentPanel.Controls.Add(y_splitContainer_Main);
+            My_TabControl_BatchRen.SelectedTab = m_TabPageBatch;
 
         }
         #endregion ToolStripMenu Items Click Events
@@ -210,15 +210,15 @@ namespace MP3TagRenamer
 
 		private void ComboBox_ExtractTagsFromFNmane_TextChanged(object sender, EventArgs e)
 		{
-			this.SetRealRegExpLabel();
+			SetRealRegExpLabel();
 		}
 
 		private void ButtonAddRemovePressets_Click(object sender, EventArgs e)
 		{
-			FormComposePressets pressets = new FormComposePressets() { Path = this.TextBox_TestPath.Text };
+			FormComposePressets pressets = new FormComposePressets() { Path = TextBox_TestPath.Text };
 			if (pressets.ShowDialog() == DialogResult.OK) {
-				this.ComboBox_ExtractTagsFromFNmane.Items.Add(pressets.RegExp);
-				this.ComboBox_ExtractTagsFromFNmane.SelectedItem = pressets.RegExp;
+				ComboBox_ExtractTagsFromFNmane.Items.Add(pressets.RegExp);
+				ComboBox_ExtractTagsFromFNmane.SelectedItem = pressets.RegExp;
 			}
 		}
 
@@ -229,27 +229,30 @@ namespace MP3TagRenamer
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed = "en-GB";
-            global::MP3TagRenamer.Properties.Settings.Default.Save();
-            throw new ApplicationException();  
+            Properties.Settings.Default.LanguageUsed = "en-GB";
+            Properties.Settings.Default.Save();
+            RestartApplication( );   
         }
 
         private void svenskaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed = "sv-SE";
-            global::MP3TagRenamer.Properties.Settings.Default.Save();
-            throw new ApplicationException();  
+            Properties.Settings.Default.LanguageUsed = "sv-SE";
+            Properties.Settings.Default.Save();
+            RestartApplication( ); 
         }
 
         private void bosniskaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            global::MP3TagRenamer.Properties.Settings.Default.LanguageUsed = "bs-Latn-BA";
-            global::MP3TagRenamer.Properties.Settings.Default.Save();
-            throw new ApplicationException();          
+            Properties.Settings.Default.LanguageUsed = "bs-Latn-BA";
+            Properties.Settings.Default.Save();
+            RestartApplication();              
         }
 
 		
+        private void RestartApplication( )
+        {
+            MessageBox.Show(this, "You need to restart application!", "Language change", MessageBoxButtons.OK);
+        }
 
-
-	}
+    }
 }
