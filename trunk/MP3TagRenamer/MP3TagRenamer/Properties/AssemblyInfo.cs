@@ -10,8 +10,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany("Mithat Hackovic")]
 [assembly: AssemblyProduct("MP3 Tag Renamer")]
-[assembly: AssemblyCopyright( "Copyright ©  2007" )]
-[assembly: AssemblyTrademark("Diss-AB")]
+[assembly: AssemblyCopyright("Copyright ©  2010")]
+[assembly: AssemblyTrademark("hackovic.com")]
 [assembly: AssemblyCulture( "" )]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

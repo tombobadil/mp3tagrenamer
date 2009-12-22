@@ -1,9 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
@@ -13,36 +8,37 @@ namespace MP3TagRenamer
 
 	public partial class UserControlFolderSelector : UserControl
 	{
-		private System.Collections.Hashtable visited_dirs_paths;
+		private System.Collections.Hashtable m_VisitedDirsPaths;
 
 		public event ActuelPathChangedHandler ActualPathCahnged;
 
 		public UserControlFolderSelector()
 		{
 			InitializeComponent();
-			visited_dirs_paths = new System.Collections.Hashtable();
-			activPath = "";
+			m_VisitedDirsPaths = new System.Collections.Hashtable();
+			m_ActivPath = "";
 
 			/// 
 			/// Load user preferencies
 			/// 
 			try
 			{
-				if (global::MP3TagRenamer.Properties.Settings.Default.LastUsedPath != ""
-					&& new DirectoryInfo(global::MP3TagRenamer.Properties.Settings.Default.LastUsedPath).Exists)
+				if (string.IsNullOrEmpty(  Properties.Settings.Default.LastUsedPath ) == false
+					&& new DirectoryInfo(Properties.Settings.Default.LastUsedPath).Exists)
 				{
-					this.ActualPath = global::MP3TagRenamer.Properties.Settings.Default.LastUsedPath;
+					ActualPath = Properties.Settings.Default.LastUsedPath;
 				}
 
-				if (global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths.Count > 0)
+                if (Properties.Settings.Default.VisitedPaths != null
+                    && Properties.Settings.Default.VisitedPaths.Count > 0)
 				{
 					int i = 0;
-					string[] _paths = new string[global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths.Count];
-					foreach (string _path in global::MP3TagRenamer.Properties.Settings.Default.VisitedPaths)
+					string[] paths = new string[Properties.Settings.Default.VisitedPaths.Count];
+					foreach (string path in Properties.Settings.Default.VisitedPaths)
 					{
-						_paths[i++] = _path;
+						paths[i++] = path;
 					}
-					this.Paths = _paths;
+					Paths = paths;
 				}
 			}
 			catch { }
@@ -61,7 +57,7 @@ namespace MP3TagRenamer
 		private void ComboBox_Folder_DropDownClosed(object sender, EventArgs e)
 		{
 			if (my_comboBox_Folder.SelectedIndex > -1
-			  && my_comboBox_Folder.SelectedItem.ToString() != activPath)
+			  && my_comboBox_Folder.SelectedItem.ToString() != m_ActivPath)
 			{
 				ActualPath = my_comboBox_Folder.SelectedItem.ToString();
 			}
@@ -70,7 +66,7 @@ namespace MP3TagRenamer
 
 		private void ComboBox_Folder_TextChanged(object sender, EventArgs e)
 		{
-			if (System.IO.Directory.Exists(my_comboBox_Folder.Text))
+			if (Directory.Exists(my_comboBox_Folder.Text))
 			{
 
 
@@ -80,29 +76,29 @@ namespace MP3TagRenamer
 
 
 				if (my_comboBox_Folder.Text.LastIndexOf("\\") > 0 &&
-					System.IO.Directory.Exists(my_comboBox_Folder.Text.Substring(0, my_comboBox_Folder.Text.LastIndexOf("\\"))))
+					Directory.Exists(my_comboBox_Folder.Text.Substring(0, my_comboBox_Folder.Text.LastIndexOf("\\"))))
 				{
 
-					string _path = my_comboBox_Folder.Text.Substring(0, my_comboBox_Folder.Text.LastIndexOf("\\"));
-					string _written_str = my_comboBox_Folder.Text.Substring(_path.Length);
+					string path = my_comboBox_Folder.Text.Substring(0, my_comboBox_Folder.Text.LastIndexOf("\\"));
+					string writtenStr = my_comboBox_Folder.Text.Substring(path.Length);
 
 					/// Remeber selection
-					int _sel_start = my_comboBox_Folder.SelectionStart;
-					int _sel_len = my_comboBox_Folder.SelectionLength;
+					int selStart = my_comboBox_Folder.SelectionStart;
+					int selLen = my_comboBox_Folder.SelectionLength;
 
 					my_comboBox_Folder.Items.Clear();
-					my_comboBox_Folder.Items.Add(_path);
-					foreach (string _sub_path in Directory.GetDirectories(_path))
+					my_comboBox_Folder.Items.Add(path);
+					foreach (string subPath in Directory.GetDirectories(path))
 					{
-						if (_sub_path.Contains(_path + _written_str))
+						if (subPath.Contains(path + writtenStr))
 						{
-							my_comboBox_Folder.Items.Add(_sub_path);
+							my_comboBox_Folder.Items.Add(subPath);
 						}
 					}
 					my_comboBox_Folder.DroppedDown = true;
 
-					my_comboBox_Folder.SelectionStart = _sel_start;
-					my_comboBox_Folder.SelectionLength = _sel_len;
+					my_comboBox_Folder.SelectionStart = selStart;
+					my_comboBox_Folder.SelectionLength = selLen;
 				}
 
 			}
@@ -110,17 +106,16 @@ namespace MP3TagRenamer
 
 		private void Button_Browse_Click(object sender, EventArgs e)
 		{
-			if (activPath != null
-				&& activPath != ""
-				&& new DirectoryInfo(activPath).Exists)
+			if (!string.IsNullOrEmpty(m_ActivPath)
+				&& new DirectoryInfo(m_ActivPath).Exists)
 			{
-				my_folderBrowserDialog.SelectedPath = activPath;
+				my_folderBrowserDialog.SelectedPath = m_ActivPath;
 			}
 
 			if (my_folderBrowserDialog.ShowDialog() == DialogResult.OK)
 			{
 				my_comboBox_Folder.Text = my_folderBrowserDialog.SelectedPath;
-				if (activPath != my_folderBrowserDialog.SelectedPath)
+				if (m_ActivPath != my_folderBrowserDialog.SelectedPath)
 				{
 					ActualPath = my_folderBrowserDialog.SelectedPath;
 					//this.OnActualPathCahnged(_activ_path);
@@ -131,35 +126,35 @@ namespace MP3TagRenamer
 		}
 
 
-		private string activPath;
+		private string m_ActivPath;
 
 		/// <summary>
 		/// Gets or Sets activ path
 		/// </summary>
 		public string ActualPath
 		{
-			get { return activPath; }
+			get { return m_ActivPath; }
 			set
 			{
 				try
 				{
 					if (!Directory.Exists(value)) return;
 
-					activPath = value;
-					if (activPath != null
-						&& !my_comboBox_Folder.Items.Contains(activPath))
+					m_ActivPath = value;
+					if (m_ActivPath != null
+						&& !my_comboBox_Folder.Items.Contains(m_ActivPath))
 					{
-						my_comboBox_Folder.Items.Add(activPath);
+						my_comboBox_Folder.Items.Add(m_ActivPath);
 					}
 
-					my_comboBox_Folder.SelectedItem = activPath;
+					my_comboBox_Folder.SelectedItem = m_ActivPath;
 
-					if (activPath != null && !visited_dirs_paths.Contains(activPath))
+					if (m_ActivPath != null && !m_VisitedDirsPaths.Contains(m_ActivPath))
 					{
-						visited_dirs_paths.Add(activPath, activPath);
+						m_VisitedDirsPaths.Add(m_ActivPath, m_ActivPath);
 					}
 
-					this.OnActualPathCahnged(activPath);
+					OnActualPathCahnged(m_ActivPath);
 				}
 				catch { }
 			}
@@ -182,18 +177,18 @@ namespace MP3TagRenamer
 			{
 				try
 				{
-					if (activPath != null && !visited_dirs_paths.ContainsKey(activPath))
+					if (m_ActivPath != null && !m_VisitedDirsPaths.ContainsKey(m_ActivPath))
 					{
-						visited_dirs_paths.Add(activPath, activPath);
+						m_VisitedDirsPaths.Add(m_ActivPath, m_ActivPath);
 					}
 
 					int c = 0;
-					string[] _paths = new string[visited_dirs_paths.Count];
-					foreach (string _path in visited_dirs_paths.Keys)
+					string[] paths = new string[m_VisitedDirsPaths.Count];
+					foreach (string path in m_VisitedDirsPaths.Keys)
 					{
-						_paths[c++] = _path;
+						paths[c++] = path;
 					}
-					return _paths;
+					return paths;
 				}
 				catch
 				{
@@ -205,19 +200,19 @@ namespace MP3TagRenamer
 			{
 				try
 				{
-					string[] _paths = value;
+					string[] paths = value;
 					my_comboBox_Folder.Items.Clear();
-					if (_paths == null) return;
+					if (paths == null) return;
 
-					my_comboBox_Folder.Items.AddRange(_paths);
+					my_comboBox_Folder.Items.AddRange(paths);
 
-					visited_dirs_paths = new System.Collections.Hashtable();
+					m_VisitedDirsPaths = new System.Collections.Hashtable();
 
-					for (int i = 0; i < Math.Min(20, _paths.Length); i++)
+					for (int i = 0; i < Math.Min(20, paths.Length); i++)
 					{
-						if (visited_dirs_paths.ContainsKey(activPath) == false)
+						if (m_VisitedDirsPaths.ContainsKey(m_ActivPath) == false)
 						{
-							visited_dirs_paths.Add(activPath, activPath);
+							m_VisitedDirsPaths.Add(m_ActivPath, m_ActivPath);
 						}
 					}
 				}
@@ -229,7 +224,7 @@ namespace MP3TagRenamer
 		private void ComboBoxFolder_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			if (my_comboBox_Folder.SelectedIndex > -1
-			 && my_comboBox_Folder.SelectedItem.ToString() != activPath)
+			 && my_comboBox_Folder.SelectedItem.ToString() != m_ActivPath)
 			{
 				//ActualPath = my_comboBox_Folder.SelectedItem.ToString();
 			}

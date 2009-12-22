@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using HundredMilesSoftware.UltraID3Lib;
 using System.Collections;
@@ -23,9 +17,9 @@ namespace MP3TagRenamer
 		public UserControlTrackList()
 		{
 			InitializeComponent();
-			m_DataGridViewTrackList.DataError += new DataGridViewDataErrorEventHandler(DataGridViewTrackList_DataError);
-			m_VisitedDirsPaths = new System.Collections.Hashtable();
-			m_UserControlFolderSelector.ActualPathCahnged += new ActuelPathChangedHandler(FolderSelector_ActualPathCahnged);
+			m_DataGridViewTrackList.DataError += DataGridViewTrackList_DataError;
+			m_VisitedDirsPaths = new Hashtable();
+			m_UserControlFolderSelector.ActualPathCahnged += FolderSelector_ActualPathCahnged;
 		}
 
 
@@ -56,13 +50,13 @@ namespace MP3TagRenamer
 		{
 			if (title.Length == 0) return;
 
-			Regex _reg_exp = new Regex(title);
+			Regex regExp = new Regex(title);
 
 			foreach (UltraID3 uid3 in m_BindingSourceUltraID3)
 			{
 				try
 				{
-					uid3.Title = _reg_exp.Replace(uid3.Title, "");
+					uid3.Title = regExp.Replace(uid3.Title, "");
 
 					uid3.Write();
 				}
@@ -95,9 +89,7 @@ namespace MP3TagRenamer
 		/// <summary>
 		/// Set track number to all tracks in datagirdview by extracing it from 
 		/// title or file name
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
+		/// </summary>		
 		public void GetTrackNrFronTitle()
 		{
 			foreach (UltraID3 uid3 in m_BindingSourceUltraID3)
@@ -106,31 +98,31 @@ namespace MP3TagRenamer
 				/// TODO: Remove year first
 				try
 				{
-					short _track_nr = -1;
+					short trackNr = -1;
 
-					string _title_val = this.GetTrackNr(uid3.Title);
+					string titleVal = GetTrackNr(uid3.Title);
 
-					if (_title_val == "")
+					if (titleVal == "")
 					{
 						/// 
 						/// Didn't found it in title
 						/// try in file name
 						/// 
 						FileInfo fi = new FileInfo(uid3.FileName);
-						string _fname = fi.Name.Replace(".mp3", "").Replace(".MP3", "");
+						string fname = fi.Name.Replace(".mp3", "").Replace(".MP3", "");
 
-						_title_val = this.GetTrackNr(_fname);
+						titleVal = GetTrackNr(fname);
 					}
 
 
-					if (_title_val != "" && short.TryParse(_title_val, out _track_nr))
+					if (titleVal != "" && short.TryParse(titleVal, out trackNr))
 					{
-						if (_track_nr > -1)
+						if (trackNr > -1)
 						{
 							/// Write result to track
-							uid3.TrackNum = _track_nr;
-							uid3.ID3v1Tag.SetTrackNum(_title_val);
-							uid3.ID3v2Tag.SetTrackNum(_title_val);
+							uid3.TrackNum = trackNr;
+							uid3.ID3v1Tag.SetTrackNum(titleVal);
+							uid3.ID3v2Tag.SetTrackNum(titleVal);
 							uid3.Write();
 						}
 					}
@@ -146,51 +138,49 @@ namespace MP3TagRenamer
         /// It takes first string that contains 1 or 2 digits and raturns it.
         /// If nothing is found empty string is returnd
         /// </summary>
-        /// <param name="titel_or_fname">Title or File name</param>
+        /// <param name="titelOrFname">Title or File name</param>
         /// <returns>returns first string that contains 1 or 2 digits.
         /// If nothing is found empty string is returnd</returns>
-        private string GetTrackNr( string titel_or_fname )
+        private static string GetTrackNr( string titelOrFname )
         {
 
-            string _val = "";
+            string val = "";
 
-            System.Text.RegularExpressions.Regex rx
-                       = new System.Text.RegularExpressions.Regex( @"\d{1,4}",
+            Regex rx
+                       = new Regex( @"\d{1,4}",
                        System.Text.RegularExpressions.RegexOptions.Singleline );
 
-            MatchCollection _matchs = rx.Matches( titel_or_fname );
+            MatchCollection matchs = rx.Matches( titelOrFname );
 
-            if( _matchs.Count > 0 )
+            if( matchs.Count > 0 )
             {
 
                 /// skip year
 
 
-                if( _matchs.Count > 1 &&
-                    _matchs[0].Value.Length > 2 &&
-                    _matchs[1].Value.Length < 3 )
+                if( matchs.Count > 1 &&
+                    matchs[0].Value.Length > 2 &&
+                    matchs[1].Value.Length < 3 )
                 {
-                    _val = _matchs[1].Value;
+                    val = matchs[1].Value;
 
-                } else if( ( _matchs.Count == 1 ) ||
-                    ( _matchs.Count > 1 &&
-                    _matchs[0].Value.Length < 3 &&
-                    _matchs[1].Value.Length > 2 ) )
+                } else if( ( matchs.Count == 1 ) ||
+                    ( matchs.Count > 1 &&
+                    matchs[0].Value.Length < 3 &&
+                    matchs[1].Value.Length > 2 ) )
                 {
-                    _val = _matchs[0].Value;
+                    val = matchs[0].Value;
                 }
 
             }
 
-            return _val;
+            return val;
         }
 		public delegate void EmptyMethodCaller();
 
 		/// <summary>
 		/// Clear all comments in all tracks in datagridview
 		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
 		public void ClearComments()
 		{
 			EmptyMethodCaller asyncMethod = new EmptyMethodCaller(ClearCommentsAsync);
@@ -198,9 +188,7 @@ namespace MP3TagRenamer
 		}
 		/// <summary>
 		/// Clear all comments in all tracks in datagridview
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
+		/// </summary>		
 		private void ClearCommentsAsync()
 		{
             lock(m_BindingSourceUltraID3.SyncRoot)
@@ -313,8 +301,8 @@ namespace MP3TagRenamer
 
 		private void FillDataGrid()
 		{
-			EmptyMethodCaller asyncMethod = new EmptyMethodCaller(FillDataGridAsync);
-			asyncMethod.BeginInvoke(new AsyncCallback(RefreshDataGrid), asyncMethod);
+			EmptyMethodCaller asyncMethod = FillDataGridAsync;
+			asyncMethod.BeginInvoke(RefreshDataGrid, asyncMethod);
 		}
 	
 
@@ -328,12 +316,12 @@ namespace MP3TagRenamer
 			
 			try
 			{
-				batchCounting_Artist = new System.Collections.Hashtable();
-				batchCounting_Album = new System.Collections.Hashtable();
-				batchCounting_Ganre = new System.Collections.Hashtable();
-				batchCounting_Year = new System.Collections.Hashtable();
+				batchCounting_Artist = new Hashtable();
+				batchCounting_Album = new Hashtable();
+				batchCounting_Ganre = new Hashtable();
+				batchCounting_Year = new Hashtable();
 
-				if (System.IO.Directory.Exists(m_ActivePath))
+				if (Directory.Exists(m_ActivePath))
 				{
 					lock (m_BindingSourceUltraID3.SyncRoot)
 					{
@@ -341,7 +329,7 @@ namespace MP3TagRenamer
 
 						m_BindingSourceUltraID3.Clear();
 
-						foreach (string mp3file in
+						foreach (string mp3File in
 								Directory.GetFiles(
 								   m_ActivePath,
 									"*.mp3",
@@ -349,15 +337,15 @@ namespace MP3TagRenamer
 						{
 							try
 							{
-								UltraID3 uID3 = new UltraID3();
-								if (uID3.Size == 0) continue;
-								uID3.Read(mp3file);
-								m_BindingSourceUltraID3.Add(uID3);
+								UltraID3 uId3 = new UltraID3();                                
+								if (uId3.Size == 0) continue;
+								uId3.Read(mp3File);
+								m_BindingSourceUltraID3.Add(uId3);
 
-								this.UpdateBestMatch(batchCounting_Album, uID3.Album);
-								this.UpdateBestMatch(batchCounting_Artist, uID3.Artist);
-								this.UpdateBestMatch(batchCounting_Ganre, uID3.Genre);
-								this.UpdateBestMatch(batchCounting_Year, uID3.Year.ToString());
+								UpdateBestMatch(batchCounting_Album, uId3.Album);
+								UpdateBestMatch(batchCounting_Artist, uId3.Artist);
+								UpdateBestMatch(batchCounting_Ganre, uId3.Genre);
+								UpdateBestMatch(batchCounting_Year, uId3.Year.ToString());
 
 							}
 							catch { }
@@ -369,19 +357,19 @@ namespace MP3TagRenamer
 			}
 			catch { }
 		}
-		private void UpdateBestMatch(Hashtable batch_counting, string uID3_value)
+		private static void UpdateBestMatch(Hashtable batchCounting, string uId3Value)
 		{
 			try
 			{
 				/// Update statistics
 				/// 
-				if (batch_counting.ContainsKey(uID3_value))
+				if (batchCounting.ContainsKey(uId3Value))
 				{
-					batch_counting[uID3_value] = ((int)batch_counting[uID3_value]) + 1;
+					batchCounting[uId3Value] = ((int)batchCounting[uId3Value]) + 1;
 				}
 				else
 				{
-					batch_counting.Add(uID3_value, 1);
+					batchCounting.Add(uId3Value, 1);
 				}
 			}
 			catch { }
@@ -394,10 +382,10 @@ namespace MP3TagRenamer
 				BatchFieldsInfo info = new BatchFieldsInfo();
 				try
 				{
-					info.Album = this.GetBestMatch(this.batchCounting_Album);
-					info.Artist = this.GetBestMatch(this.batchCounting_Artist);
-					info.Year = this.GetBestMatch(this.batchCounting_Year);
-					info.Ganre = this.GetBestMatch(this.batchCounting_Ganre);
+					info.Album = GetBestMatch(this.batchCounting_Album);
+					info.Artist = GetBestMatch(this.batchCounting_Artist);
+					info.Year = GetBestMatch(this.batchCounting_Year);
+					info.Ganre = GetBestMatch(this.batchCounting_Ganre);
 				}
 				catch { }
 				BatchFieldsUpdated(this, info);
@@ -405,24 +393,24 @@ namespace MP3TagRenamer
 		}
 
 
-		private string GetBestMatch(Hashtable hash_table)
+		private static string GetBestMatch(Hashtable hashTable)
 		{
-			int _temp = 0;
-			string _best_match = "";
+			int temp = 0;
+			string bestMatch = "";
 			try
 			{
-				foreach (string _key in hash_table.Keys)
+				foreach (string key in hashTable.Keys)
 				{
-					if (_key != "" && ((int)hash_table[_key]) > _temp)
+					if (key != "" && ((int)hashTable[key]) > temp)
 					{
-						_temp = (int)hash_table[_key];
-						_best_match = _key;
+						temp = (int)hashTable[key];
+						bestMatch = key;
 					}
 				}
 			}
 			catch { }
 
-			return _best_match;
+			return bestMatch;
 		}
 
 		private void DataGridView_MP3s_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -478,12 +466,12 @@ Year:   {4} ",
 				if (m_DataGridViewTrackList.Columns[e.ColumnIndex] == this.dataGridViewImageColumn1)
 				{
 
-					Process mp3_player_process = new Process();
+					Process mp3PlayerProcess = new Process();
 
-					mp3_player_process.StartInfo.FileName = "\"" + SelectedTracksPath + "\"";
-					mp3_player_process.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
-					mp3_player_process.StartInfo.UseShellExecute = true;
-					mp3_player_process.Start();
+					mp3PlayerProcess.StartInfo.FileName = "\"" + SelectedTracksPath + "\"";
+					mp3PlayerProcess.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
+					mp3PlayerProcess.StartInfo.UseShellExecute = true;
+					mp3PlayerProcess.Start();
 
 
 				}
@@ -509,13 +497,13 @@ Year:   {4} ",
 
 		public void ExtractFRomFName(string userRegExpString)
 		{
-			string reg_expr = GetRegExpFromInput( userRegExpString);
+			string regExpr = GetRegExpFromInput( userRegExpString);
 
 			foreach (DataGridViewRow dr in m_DataGridViewTrackList.SelectedRows)
 			{
 
 				UltraID3 uid3 = (UltraID3)m_BindingSourceUltraID3[dr.Index];
-				this.UpdateInfoFromFileName(uid3, reg_expr, userRegExpString);
+				UpdateInfoFromFileName(uid3, regExpr, userRegExpString);
 			}
 			m_DataGridViewTrackList.Refresh();
 		}
@@ -530,11 +518,11 @@ Year:   {4} ",
 		public const string RE_TITLE = "#title#";
 		public const string RE_TRACKNR = "#tracknr#";
 
-		private void UpdateInfoFromFileName(UltraID3 uid3, string reg_expr, string userRegExpString)
+		private static void UpdateInfoFromFileName(UltraID3 uid3, string regExpr, string userRegExpString)
 		{
 			try
 			{
-				Regex _trackinfo_regexp = new Regex(reg_expr, RegexOptions.Singleline);				
+				Regex trackinfoRegexp = new Regex(regExpr, RegexOptions.Singleline);				
 				///TODO: string _t = ComboBox_ExtractTagsFromFNmane.Text;
 
 				SortedList ht = new SortedList();
@@ -546,14 +534,14 @@ Year:   {4} ",
 
 
 
-				foreach (Match m in _trackinfo_regexp.Matches(uid3.FileName))
+				foreach (Match m in trackinfoRegexp.Matches(uid3.FileName))
 				{
-					IEnumerator en_ht = ht.Keys.GetEnumerator();
+					IEnumerator enHt = ht.Keys.GetEnumerator();
 
 					for (int i = 1; i < m.Groups.Count; i++)
 					{
-						en_ht.MoveNext();
-						int key = (int)en_ht.Current;
+						enHt.MoveNext();
+						int key = (int)enHt.Current;
 						Group g = m.Groups[i];
 						try
 						{
@@ -578,10 +566,19 @@ Year:   {4} ",
 									break;
 
 								case RE_TRACKNR:
-									uid3.SetTrackNum(g.Value);
-									uid3.ID3v1Tag.SetTrackNum(g.Value);
-									uid3.ID3v2Tag.SetTrackNum(g.Value);
-									break;
+									try{
+                                        uid3.SetTrackNum(g.Value);
+                                    }catch{}
+									try{
+                                        uid3.ID3v1Tag.SetTrackNum(g.Value);
+                                    }
+                                    catch { } 
+                                    try
+                                    {
+                                        uid3.ID3v2Tag.SetTrackNum(g.Value);
+                                    }
+                                    catch { }
+							        break;
 
 								case RE_YEAR:
 									uid3.SetYear(g.Value);
@@ -606,7 +603,7 @@ Year:   {4} ",
 		/// <returns>Returns string - regular expretion that is used to extract info from file name</returns>
 		public static string GetRegExpFromInput(string userRegExpString)
 		{
-			string reg_exp = "";
+			string regExp = "";
 			try
 			{
 				///@"#artist# - #tracknr# - #album# - #year# - #title#"
@@ -616,11 +613,11 @@ Year:   {4} ",
 				///TODO: string _t = ComboBox_ExtractTagsFromFNmane.Text;
 
 				/// TODO: errorhandling if properties not set
-				string _album_rgx = global::MP3TagRenamer.Properties.Settings.Default.regex_album;
-				string _artist_rgx = global::MP3TagRenamer.Properties.Settings.Default.regex_artist;
-				string _title_rgx = global::MP3TagRenamer.Properties.Settings.Default.regex_titel;
-				string _tracknr_rgx = global::MP3TagRenamer.Properties.Settings.Default.regex_tracknr;
-				string _year_rgx = global::MP3TagRenamer.Properties.Settings.Default.regex_year;
+				string albumRgx = global::MP3TagRenamer.Properties.Settings.Default.regex_album;
+				string artistRgx = global::MP3TagRenamer.Properties.Settings.Default.regex_artist;
+				string titleRgx = global::MP3TagRenamer.Properties.Settings.Default.regex_titel;
+				string tracknrRgx = global::MP3TagRenamer.Properties.Settings.Default.regex_tracknr;
+				string yearRgx = global::MP3TagRenamer.Properties.Settings.Default.regex_year;
 
 
 
@@ -629,37 +626,37 @@ Year:   {4} ",
 				string _t2 = userRegExpString;
 				if (userRegExpString.Contains(RE_ARTIS))
 				{
-					_t2 = userRegExpString.Replace(RE_ARTIS, "(" + _artist_rgx + ")");
+					_t2 = userRegExpString.Replace(RE_ARTIS, "(" + artistRgx + ")");
 				}
 				if (userRegExpString.Contains(RE_TRACKNR))
 				{
-					_t2 = _t2.Replace(RE_TRACKNR, "(" + _tracknr_rgx + ")");
+					_t2 = _t2.Replace(RE_TRACKNR, "(" + tracknrRgx + ")");
 				}
 				if (userRegExpString.Contains(RE_ALBUM))
 				{
-					_t2 = _t2.Replace(RE_ALBUM, "(" + _album_rgx + ")");
+					_t2 = _t2.Replace(RE_ALBUM, "(" + albumRgx + ")");
 				}
 				if (userRegExpString.Contains(RE_TITLE))
 				{
-					_t2 = _t2.Replace(RE_TITLE, "(" + _title_rgx + ")");
+					_t2 = _t2.Replace(RE_TITLE, "(" + titleRgx + ")");
 				}
 				if (userRegExpString.Contains(RE_YEAR))
 				{
-					_t2 = _t2.Replace(RE_YEAR, "(" + _year_rgx + ")");
+					_t2 = _t2.Replace(RE_YEAR, "(" + yearRgx + ")");
 				}
 
-				reg_exp = _t2;
+				regExp = _t2;
 
 			}
 			catch
 			{
 				return "";
 			}
-			return reg_exp;
+			return regExp;
 
 		}
 
-		public static string ExtracFromFName_TEST(string userRegExpString, string selectedTracksPath)
+		public static string ExtracFromFNameTest(string userRegExpString, string selectedTracksPath)
 		{
 			string resultString = "";
 			try
@@ -669,8 +666,8 @@ Year:   {4} ",
 				//SelectedTracksPath = m_DataGridViewTrackList.SelectedRows[0].Cells[dataGridViewTextBoxColumn10.Name].Value.ToString();
 				//OnTrackListRowEnter();
 
-				string _t2 = GetRegExpFromInput(userRegExpString);
-				Regex _trackinfo_regexp = new Regex(_t2, RegexOptions.Singleline);
+				string t2 = GetRegExpFromInput(userRegExpString);
+				Regex trackinfoRegexp = new Regex(t2, RegexOptions.Singleline);
 				//resultString = _t2 + Environment.NewLine;				
 
 				SortedList ht = new SortedList();
@@ -682,15 +679,15 @@ Year:   {4} ",
 
 
 
-				foreach (Match m in _trackinfo_regexp.Matches(selectedTracksPath))
+				foreach (Match m in trackinfoRegexp.Matches(selectedTracksPath))
 				{
 					// Label_Regextpresult.Text += m.Value + @"%" + m.Groups.Count + @"|";
-					IEnumerator en_ht = ht.Keys.GetEnumerator();
+					IEnumerator enHt = ht.Keys.GetEnumerator();
 
 					for (int i = 1; i < m.Groups.Count; i++)
 					{
-						en_ht.MoveNext();
-						int key = (int)en_ht.Current;
+						enHt.MoveNext();
+						int key = (int)enHt.Current;
 						Group g = m.Groups[i];
 						resultString += string.Format("{0,-10} : {1}{2}" ,  ht[key] , g.Value , Environment.NewLine);
 					}

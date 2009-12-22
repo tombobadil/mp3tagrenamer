@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace MP3TagRenamer
@@ -14,7 +13,9 @@ namespace MP3TagRenamer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault( false );
-            RestartFormIfLangageChaned();
+            Application.Run(new MainForm()); 
+            
+            //RestartFormIfLangageChaned();
         }
 
         private static void RestartFormIfLangageChaned()
