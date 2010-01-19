@@ -7,6 +7,8 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupMP3Renamer x64", "Setu
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupMP3Renamer x86", "SetupMP3Renamer x86\SetupMP3Renamer_x86.vdproj", "{EB2F0E4A-6991-4885-9D5F-F80585C882DD}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupMP3Renamer Any CPU", "SetupMP3Renamer Any CPU\SetupMP3Renamer_AnyCPU.vdproj", "{939E1AD0-AE72-42E5-8173-827F148D3FBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,18 @@ Global
 		{EB2F0E4A-6991-4885-9D5F-F80585C882DD}.Release|x64.ActiveCfg = Release
 		{EB2F0E4A-6991-4885-9D5F-F80585C882DD}.Release|x86.ActiveCfg = Release
 		{EB2F0E4A-6991-4885-9D5F-F80585C882DD}.Release|x86.Build.0 = Release
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Debug|Any CPU.ActiveCfg = Debug
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Debug|Any CPU.Build.0 = Debug
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Debug|x64.ActiveCfg = Debug
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Debug|x64.Build.0 = Debug
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Debug|x86.ActiveCfg = Debug
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Debug|x86.Build.0 = Debug
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Release|Any CPU.ActiveCfg = Release
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Release|Any CPU.Build.0 = Release
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Release|x64.ActiveCfg = Release
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Release|x64.Build.0 = Release
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Release|x86.ActiveCfg = Release
+		{939E1AD0-AE72-42E5-8173-827F148D3FBC}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
